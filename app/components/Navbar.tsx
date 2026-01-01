@@ -2,6 +2,14 @@
 
 import Link from "next/link";
 
+const navLinks = [
+  { href: '/', label: "Home"},
+  { href: '/about', label: "About"},
+  { href: '/services', label: "Services"},
+  { href: '/projects', label: "Projects"},
+  { href: '/contact', label: "Contact Me"},
+]
+
 const Navbar = () => {
   return (
     <div className="navbar bg-base-100 shadow-sm fixed top-0 z-50 w-full">

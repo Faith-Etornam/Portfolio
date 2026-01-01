@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     siteName: "Faith Etornam Portfolio",
     images: [
       {
-        url: "/profile-pic.png",
+        url: "/profile.png",
         width: 1200,
         height: 630,
         alt: "Faith Etornam - Backend Engineer",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
       "Backend Developer specializing in Django and React.js. View my projects and technical articles.",
     images: [
       {
-        url: "/profile-pic.png",
+        url: "/profile.png",
       },
     ],
   },
