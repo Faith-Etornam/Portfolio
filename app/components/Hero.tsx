@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="hero min-h-[100vh] bg-base-200">
+    <div className="hero min-h-screen bg-base-200">
       
       <div className="hero-content flex-col lg:flex-row gap-10 md:gap-16">
         

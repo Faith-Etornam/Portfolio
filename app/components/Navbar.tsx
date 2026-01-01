@@ -1,35 +1,30 @@
-'use client'
+"use client";
 
 import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-base-100 shadow-sm fixed top-0 z-50 w-full">
       <div className="flex-1">
-        <Link href={'/'} className="btn btn-ghost text-xl">daisyUI</Link>
+        <Link href={"/"} className="btn btn-ghost text-xl">
+          Faith Etornam
+        </Link>
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Link</a>
+            <Link href="/projects">Projects</Link>
           </li>
           <li>
-            <details>
-              <summary>Parent</summary>
-              <ul className="bg-base-100 rounded-t-none p-2">
-                <li>
-                  <a>Link 1</a>
-                </li>
-                <li>
-                  <a>Link 2</a>
-                </li>
-              </ul>
-            </details>
+            <Link href="/about">About</Link>
+          </li>
+          <li>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </div>
     </div>
   );
-}
+};
 
-export default Navbar
+export default Navbar;
