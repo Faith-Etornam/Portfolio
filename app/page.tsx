@@ -1,5 +1,6 @@
 import { Metadata } from "next";
-import Navbar from "./components/ui/Navbar";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://localhost:3000'
 
@@ -22,6 +23,7 @@ export const metadata: Metadata = {
     "Full Stack Engineer",
     "Software Developer Ghana",
     "ALX Student",
+    "ALX Certified Backend Developer"
   ],
 
   authors: [{ name: "Faith Etornam" }],
@@ -72,7 +74,9 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-
+    <>
     <Navbar />
+    <Hero />
+    </>
   )
 }
