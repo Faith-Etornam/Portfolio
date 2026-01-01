@@ -1,6 +1,6 @@
 import { Metadata } from "next";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://localhost:3000'
 
