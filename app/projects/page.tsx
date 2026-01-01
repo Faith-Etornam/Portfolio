@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    
+
   title: "My Projects",
   description:
     "Explore the technical portfolio of Faith Etornam. Featuring scalable backend APIs, secure database architectures, and full-stack applications built with Python, Django, and React.js.",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 };
 
 const Projects = () => {
-  return <div></div>;
+  return <div><p>Projects Page</p></div>;
 };
 
 export default Projects;
