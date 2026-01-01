@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | Faith Etornam",
   },
   description:
-    "I am Faith Etornam, a Backend Engineer specializing in Python, Django, and skills in Frontend Development with React.js and Next.js. I build scalable APIs, secure database architectures, and dynamic web applications.",
+    "I build scalable APIs and secure databases using Python & Django. A Backend Engineer with additional frontend capabilities in React.js and Next.js.",
 
   keywords: [
     "Faith Etornam",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "Full Stack Engineer",
     "Software Developer Ghana",
     "ALX Student",
-    "ALX Certified Backend Developer"
+    "ALX Certified Backend Developer",
   ],
 
   authors: [{ name: "Faith Etornam" }],
@@ -80,6 +80,7 @@ export const metadata: Metadata = {
       },
     ],
   },
+  publisher: "Faith Etornam",
 };
 
 export default function RootLayout({
