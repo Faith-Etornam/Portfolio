@@ -1,12 +1,11 @@
 import { Metadata } from "next";
 import Navbar from "./components/ui/Navbar";
 
-
-const baseUrl = 'https://localhost:3000'
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://localhost:3000'
 
 export const metadata: Metadata = {
   title: {
-    default: "Faith Etornam | Backend Developer (Django & React.js)",
+    default: "Faith Etornam | Backend Engineer (Django) | Frontend Developer",
     template: "%s | Faith Etornam",
   },
   description:
@@ -70,6 +69,7 @@ export const metadata: Metadata = {
     ],
   },
 };
+
 export default function Home() {
   return (
 
