@@ -3,7 +3,6 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
 
   title: "My Services",
-
   description:
     "Professional backend development services including scalable API design, secure database architecture, and custom web solutions using Python, Django, and React.js. & Next.js",
 
