@@ -2,13 +2,18 @@ import { Metadata } from "next";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://localhost:3000'
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL
+  ? new URL(process.env.NEXT_PUBLIC_SITE_URL)
+  : new URL("http://localhost:3000");
 
 export const metadata: Metadata = {
+  metadataBase: baseUrl,
+
   title: {
     default: "Faith Etornam | Backend Engineer (Django) | Frontend Developer",
     template: "%s | Faith Etornam",
   },
+  
   description:
     "I am Faith Etornam, a Backend Engineer specializing in Python, Django, and skills in Frontend Development with React.js and Next.js. I build scalable APIs, secure database architectures, and dynamic web applications.",
 
