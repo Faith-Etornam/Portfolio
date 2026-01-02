@@ -64,7 +64,7 @@ const Navbar = () => {
           <div className="hidden md:block">
             <div style={{ display: "none" }} className="md:block"></div>
             <Link href="/contact">
-              <Button variant="gradient">Let&apos;s Talk</Button>
+              <Button variant="glow">Let&apos;s Talk</Button>
             </Link>
           </div>
         </div>

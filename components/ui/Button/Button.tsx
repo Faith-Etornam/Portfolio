@@ -18,7 +18,6 @@ export interface ButtonProps
 
 const variantStyles = {
   default: styles.default,
-  destructive: styles.destructive,
   outline: styles.outline,
   secondary: styles.secondary,
   ghost: styles.ghost,
