@@ -6,6 +6,7 @@ import styles from "./Navbar.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import Button from "../ui/Button";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -44,6 +45,7 @@ const Navbar = () => {
               </span>
             </div>
           </Link>
+
           <div className={styles.desktopNav}>
             {navLinks.map((link) => (
               <Link
@@ -57,6 +59,13 @@ const Navbar = () => {
                 {link.label}
               </Link>
             ))}
+          </div>
+
+          <div className="hidden md:block">
+            <div style={{ display: "none" }} className="md:block"></div>
+            <Link href="/contact">
+              <Button variant="gradient">Let&apos;s Talk</Button>
+            </Link>
           </div>
         </div>
       </nav>
