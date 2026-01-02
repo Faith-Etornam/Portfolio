@@ -1,8 +1,6 @@
 "use client";
 
-import Link from "next/link";
-import Image from "next/image"; 
-import { usePathname } from "next/navigation";
+import styles from './Navbar.module.css'
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -14,10 +12,13 @@ const navLinks = [
 
 const Navbar = () => {
   return (
-    <div>
-      
-    </div>
-  )
+   <header className={`${styles.header}`}>
+    <nav>
+
+    </nav>
+
+   </header>
+  );
 }
 
 export default Navbar
