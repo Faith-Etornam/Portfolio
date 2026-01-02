@@ -1,6 +1,11 @@
 "use client";
 
-import styles from './Navbar.module.css'
+import { useEffect, useState } from "react";
+import { Menu } from "lucide-react";
+import styles from "./Navbar.module.css";
+import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -11,15 +16,52 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+  const pathname = usePathname();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.screenY > 20);
+    };
+  });
+
   return (
-   <header className={`${styles.header}`}>
-    <nav>
-
-    </nav>
-
-   </header>
+    <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
+      <nav className={styles.container}>
+        <div className={styles.navWrapper}>
+          <Link href="/" className={styles.logoLink}>
+            <div className={styles.logoIconWrapper}>
+              <Image
+                src="/profile.jpg"
+                alt="Faith Etornam"
+                width={20}
+                height={20}
+                className={styles.profilePic}
+              />
+              <span className={styles.logoText}>
+                Faith
+                <span style={{ color: "var(--foreground)" }}> Etornam</span>
+              </span>
+            </div>
+          </Link>
+          <div className={styles.desktopNav}>
+            {navLinks.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                className={`
+                  ${styles.navLink} 
+                  ${pathname === link.label ? styles.activeLink : ""}
+                `}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </nav>
+    </header>
   );
-}
+};
 
-export default Navbar
-
+export default Navbar;
