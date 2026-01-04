@@ -27,6 +27,7 @@ export const metadata: Metadata = {
 
   keywords: [
     "Faith Etornam Gbadegbe",
+    "Faith Etornam",
     "JavaScript Developer",
     "Python Developer",
     "Backend Developer",
