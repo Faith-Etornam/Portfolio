@@ -1,3 +1,7 @@
+:root{
+  --primary-color: #2563eb;
+}
+
 .header{
     position: fixed;
     top: 0;
@@ -74,6 +78,19 @@
     gap: 0.25rem;
 }
 
+.ctaButton{
+  display: none;
+}
+
+.menuIcon {
+  height: 1.5rem;
+  width: 1.5rem;  
+}
+
+.mobileToggle:hover {
+  color: var(--primary-color);     
+}
+
 @media (min-width: 768px) {
   .desktopNav {
     display: flex;
@@ -82,4 +99,9 @@
   .mobileToggle {
     display: none;
   }
+
+  .ctaButton{
+  display: block;
+}
+
 }

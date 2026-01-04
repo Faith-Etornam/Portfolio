@@ -1,7 +1,8 @@
 "use client";
 
+import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -19,12 +20,20 @@ const navLinks = [
 const Navbar = () => {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.screenY > 20);
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
     };
   });
+
+useEffect(() => {
+  // eslint-disable-next-line react-hooks/set-state-in-effect
+  setIsMobileMenuOpen(false)
+}, [pathname])
 
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
@@ -61,12 +70,23 @@ const Navbar = () => {
             ))}
           </div>
 
-          <div className="hidden md:block">
-            <div style={{ display: "none" }} className="md:block"></div>
+          <div className={styles.ctaButton}>
             <Link href="/contact">
               <Button variant="glow">Let&apos;s Talk</Button>
             </Link>
           </div>
+
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className={} 
+            aria-label="Toggle mobile menu"
+          >
+            {isMobileMenuOpen ? (
+              <X className={styles.menuIcon} /> 
+            ) : (
+              <Menu className={styles.menuIcon} /> 
+            )}
+          </button>
         </div>
       </nav>
     </header>

@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+
+  metadataBase: baseUrl,
+  
   title: {
     default: "Faith Etornam | Backend Engineer (Django) | Frontend Developer",
     template: "%s | Faith Etornam",
@@ -25,8 +28,8 @@ export const metadata: Metadata = {
   keywords: [
     "Faith Etornam",
     "JavaScript Developer",
-    "Backend Developer",
     "Python Developer",
+    "Backend Developer",
     "Django REST Framework",
     "React.js Developer",
     "Next.js Developer",
@@ -54,7 +57,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Faith Etornam | Python & JavaScript Developer",
     description:
-      "Explore the portfolio of Faith Etornam. Specializing in Python, Django, and React.js, Next.js development.",
+      "Explore the portfolio of Faith Etornam. Specializing Backend Development using Python/Django, Frontend Development using React.js/Next.js development.",
     url: `${baseUrl}/`,
     siteName: "Faith Etornam Portfolio",
     images: [
@@ -81,6 +84,9 @@ export const metadata: Metadata = {
     ],
   },
   publisher: "Faith Etornam",
+  verification: {
+    // verification from google
+  }
 };
 
 export default function RootLayout({
