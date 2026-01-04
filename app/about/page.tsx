@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "About Faith Etornam | Backend Engineer | Frontend Developer",
+    title: "About Me",
     description:
       "Backend Developer specializing in Python/Django and TypeScript/React.js.",
     images: ["/profile.jpg"],

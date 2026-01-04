@@ -78,13 +78,13 @@ useEffect(() => {
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={} 
+            className={styles.mobileToggleBtn}
             aria-label="Toggle mobile menu"
           >
             {isMobileMenuOpen ? (
-              <X className={styles.menuIcon} /> 
+              <X className={styles.menuIcon} />
             ) : (
-              <Menu className={styles.menuIcon} /> 
+              <Menu className={styles.menuIcon} />
             )}
           </button>
         </div>

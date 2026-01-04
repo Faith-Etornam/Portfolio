@@ -19,14 +19,14 @@ export const metadata: Metadata = {
   metadataBase: baseUrl,
   
   title: {
-    default: "Faith Etornam | Backend Engineer (Django) | Frontend Developer",
-    template: "%s | Faith Etornam",
+    default: "Faith Etornam Gbadegbe | Backend Engineer (Django) | Frontend Developer (React.js)",
+    template: "%s | Faith Etornam Gbadegbe",
   },
   description:
     "I build scalable APIs and secure databases using Python & Django. A Backend Engineer with additional frontend capabilities in React.js and Next.js.",
 
   keywords: [
-    "Faith Etornam",
+    "Faith Etornam Gbadegbe",
     "JavaScript Developer",
     "Python Developer",
     "Backend Developer",
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
     "ALX Certified Backend Developer",
   ],
 
-  authors: [{ name: "Faith Etornam" }],
-  creator: "Faith Etornam",
+  authors: [{ name: "Faith Etornam Gbadegbe" }],
+  creator: "Faith Etornam Gbadegbe",
 
   robots: {
     index: true,
@@ -55,17 +55,17 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Faith Etornam | Python & JavaScript Developer",
+    title: "Faith Etornam Gbadegbe | Python & JavaScript Developer",
     description:
-      "Explore the portfolio of Faith Etornam. Specializing Backend Development using Python/Django, Frontend Development using React.js/Next.js development.",
+      "Explore the portfolio of Faith Etornam Gbadegbe. Specializing Backend Development using Python/Django, Frontend Development using React.js/Next.js development.",
     url: `${baseUrl}/`,
-    siteName: "Faith Etornam Portfolio",
+    siteName: "Faith Etornam Gbadegbe Portfolio",
     images: [
       {
         url: "/profile.png",
         width: 1200,
         height: 630,
-        alt: "Faith Etornam - Backend Engineer",
+        alt: "Faith Etornam Gbadegbe - Backend Engineer",
       },
     ],
     locale: "en_US",
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Faith Etornam | Python & JavaScript Developer",
+    title: "Faith Etornam Gbadegbe | Python & JavaScript Developer",
     description:
       "Backend Developer specializing in Django and React.js. View my projects and technical articles.",
     images: [
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-  publisher: "Faith Etornam",
+  publisher: "Faith Etornam Gbadegbe",
   verification: {
     // verification from google
   }

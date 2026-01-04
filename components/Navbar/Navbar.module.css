@@ -83,8 +83,19 @@
 }
 
 .menuIcon {
-  height: 1.5rem;
-  width: 1.5rem;  
+  height: 1.8rem;
+  width: 1.8rem;  
+}
+
+.mobileToggleBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;            
+  background: transparent;    
+  border: none;               
+  cursor: pointer;   
+  transition: color 150ms ease-in-out; 
 }
 
 .mobileToggle:hover {
@@ -102,6 +113,10 @@
 
   .ctaButton{
   display: block;
+}
+
+.mobileToggleBtn{
+  display: none;
 }
 
 }
