@@ -77,7 +77,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop navigation bar ends here */}
-          
+
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className={styles.mobileToggleBtn}
@@ -112,7 +112,7 @@ const Navbar = () => {
                   </Link>
                 );
               })}
-              <Button variant="glow">
+              <Button variant="glow" style={{marginTop: 10}}>
                 <Link href="/contact">Let&apos;s Talk</Link>
               </Button>
             </div>

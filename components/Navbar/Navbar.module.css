@@ -51,6 +51,7 @@
   text-decoration: none;
   color: #e0e4eb;
   transition: all 0.3s ease;
+  text-align: center;
 }
 
 .navLink:hover {
@@ -120,16 +121,13 @@
   max-height: 24rem;
   opacity: 1;
   margin-top: 1rem;
-  display: block;position: absolute;
-
+  display: block;
+  position: absolute;
+  padding: 0 2rem;
   top: 100%;
-  
-  /* 3. Stretch it across the screen */
   left: 0;
   width: 100%;
-  
-  /* 4. Ensure it sits ON TOP of your page content */
-  z-index: 50;
+  z-index: 10;
 }
 
 .glassContainer {
