@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   metadataBase: baseUrl,
   
   title: {
-    default: "Faith Etornam Gbadegbe | Backend Engineer (Django) | Frontend Developer (React.js)",
+    default: "Faith Etornam Gbadegbe | Software Engineer",
     template: "%s | Faith Etornam Gbadegbe",
   },
   description:

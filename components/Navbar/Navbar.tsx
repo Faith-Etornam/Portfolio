@@ -30,10 +30,10 @@ const Navbar = () => {
     };
   });
 
-useEffect(() => {
-  // eslint-disable-next-line react-hooks/set-state-in-effect
-  setIsMobileMenuOpen(false)
-}, [pathname])
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setIsMobileMenuOpen(false);
+  }, [pathname]);
 
   return (
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
@@ -50,7 +50,7 @@ useEffect(() => {
               />
               <span className={styles.logoText}>
                 Faith
-                <span style={{ color: "var(--foreground)" }}> Etornam</span>
+                <span> Etornam </span>
               </span>
             </div>
           </Link>
@@ -76,6 +76,8 @@ useEffect(() => {
             </Link>
           </div>
 
+          {/* Desktop navigation bar ends here */}
+          
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className={styles.mobileToggleBtn}
@@ -87,6 +89,34 @@ useEffect(() => {
               <Menu className={styles.menuIcon} />
             )}
           </button>
+
+
+          <div
+            className={`${styles.mobileMenu} ${
+              isMobileMenuOpen ? styles.menuOpen : ""
+            }`}
+          >
+            <div className={styles.glassContainer}>
+              {navLinks.map((link) => {
+                const isActive = pathname === link.label;
+
+                return (
+                  <Link
+                    key={link.label}
+                    href={link.href}
+                    className={`${styles.navLink} ${
+                      isActive ? styles.activeLink : styles.inactiveLink
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                );
+              })}
+              <Button variant="glow">
+                <Link href="/contact">Let&apos;s Talk</Link>
+              </Button>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
