@@ -1,4 +1,5 @@
-import React, { ReactNode } from 'react'
+import { ReactNode } from 'react'
+import styles from "./Layout.module.css"
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 
@@ -8,9 +9,9 @@ interface Props {
 
 const Layout = ({children}: Props) => {
   return (
-    <div className="min-h-screen flex flex-col bg-background">
+    <div className={styles.container}>
       <Navbar />
-      <main className="flex-1 pt-20">{children}</main>
+      <main className={styles.content}>{children}</main>
       <Footer />
     </div>
   );
