@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link"; 
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,14 +20,21 @@ const Navbar = () => {
     <nav className="bg-white shadow-md w-full fixed top-0 left-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo Section */}
           <div className="flex-shrink-0 flex items-center">
             <Link
               href="/"
-              className="text-2xl font-bold text-gray-800 tracking-wide"
+              className="text-2xl font-bold text-gray-800 tracking-wide flex items-center"
             >
-                {/* <Image /> */}
-              Portfolio<span className="text-blue-600">.</span>
+              <Image
+                src="/profile.jpg"
+                alt="Faith Etornam Gbadegbe Profile Picture"
+                width={40}
+                height={40}
+                className="w-10 h-10 rounded-full object-cover flex-shrink-0 border-2 border-transparent hover:border-blue-600 transition-colors duration-300 mr-3"
+              />
+              <span>
+                Portfolio<span className="text-blue-600">.</span>
+              </span>
             </Link>
           </div>
 
