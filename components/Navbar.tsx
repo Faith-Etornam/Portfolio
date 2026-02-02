@@ -1,12 +1,32 @@
-"use client"
+"use client";
 
-import React, { useState } from "react";
-import { Menu, X } from "lucide-react";
-import Link from "next/link"; 
+import React, { useEffect, useState } from "react";
+import { Menu, Moon, Sun, X } from "lucide-react";
+import Link from "next/link";
 import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleTheme = () => {
+    setDarkMode(!darkMode);
+    if (document.documentElement.classList.contains("dark")) {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    } else {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    }
+  };
+
+  useEffect(() => {
+    if (localStorage.getItem("theme") === "dark") {
+      document.documentElement.classList.add("dark");
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setDarkMode(true);
+    }
+  }, []);
 
   const navLinks = [
     { name: "Home", href: "/" },
@@ -33,7 +53,10 @@ const Navbar = () => {
                 className="w-10 h-10 rounded-full object-cover flex-shrink-0 border-2 border-transparent hover:border-blue-600 transition-colors duration-300 mr-3"
               />
               <span>
-                Portfolio<span className="text-blue-600">.</span>
+                Faith Etor
+                <span className="bg-gradient-to-r from-blue-600 to-transparent bg-clip-text text-transparent">
+                  nam
+                </span>
               </span>
             </Link>
           </div>
@@ -49,6 +72,15 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
+          </div>
+          {/* Dark Mode Toggle Button (Desktop) */}
+          <div>
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 transition-colors"
+            >
+              {darkMode ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
