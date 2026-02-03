@@ -1,3 +1,5 @@
+import Accordion from "@/components/Accordion";
+import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import Hero from "@/components/HeroPage";
 import Navbar from "@/components/Navbar";
@@ -11,6 +13,8 @@ export default function Home() {
       <Hero />
       <ServiceCard />
       <TechStack />
+      <Accordion />
+      <CTASection />
       <Footer />
     </>
   );

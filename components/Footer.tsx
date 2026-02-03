@@ -104,8 +104,8 @@ const Footer = () => {
 
             <div className="mt-6 p-4 bg-gray-100 dark:bg-gray-800/50 rounded-lg">
               <p className="text-xs text-gray-500 dark:text-gray-400 italic">
-                &quot;May the spirit that blessed the ones before us, give us
-                the courage to make our lifes a blessing&quot;
+                &quot;May the spirit that blessed the ones before us give us
+                the courage to make our lives a blessing&quot;
               </p>
             </div>
           </div>
