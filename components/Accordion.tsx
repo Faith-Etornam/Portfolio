@@ -42,8 +42,14 @@ export default function FAQSection() {
   return (
     <section className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-3xl mx-auto px-4">
-        {/* Header */}
-        <div className="text-center mb-12">
+        
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-12"
+        >
           <div className="inline-flex items-center justify-center p-3 bg-blue-100 dark:bg-blue-900/30 rounded-full mb-4">
             <MessageCircleQuestion className="w-6 h-6 text-blue-600 dark:text-blue-400" />
           </div>
@@ -53,13 +59,17 @@ export default function FAQSection() {
           <p className="text-gray-600 dark:text-gray-400">
             Common questions about my services and process.
           </p>
-        </div>
+        </motion.div>
 
-        {/* Accordion List */}
+        {/* Accordion List - NOW ANIMATED WITH STAGGER */}
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div
+            <motion.div
               key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ delay: index * 0.1, duration: 0.4 }} // Stagger effect
               className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden"
             >
               <button
@@ -78,7 +88,7 @@ export default function FAQSection() {
                 </motion.div>
               </button>
 
-              {/* Animated Answer Body */}
+              {/* Answer Body */}
               <AnimatePresence>
                 {activeIndex === index && (
                   <motion.div
@@ -93,12 +103,10 @@ export default function FAQSection() {
                   </motion.div>
                 )}
               </AnimatePresence>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
-
-      {/* CTA Section - Place this below the Accordion div */}
     </section>
   );
 }
