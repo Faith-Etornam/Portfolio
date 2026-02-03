@@ -38,14 +38,12 @@ const Navbar = () => {
   ];
 
   return (
-    
     <nav className="bg-white shadow-md dark:bg-gray-900 w-full fixed top-0 left-0 z-50 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 flex items-center">
             <Link
               href="/"
-             
               className="text-2xl font-bold text-gray-800 dark:text-white tracking-wide flex items-center transition-colors"
             >
               <Image
@@ -70,7 +68,6 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 href={link.href}
-                
                 className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-300"
               >
                 {link.name}
@@ -82,7 +79,6 @@ const Navbar = () => {
           <div>
             <button
               onClick={toggleTheme}
-             
               className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-600 dark:text-gray-300 transition-colors"
             >
               {darkMode ? (
@@ -97,7 +93,6 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-             
               className="text-gray-600 dark:text-gray-300 hover:text-blue-600 focus:outline-none"
             >
               {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -107,24 +102,24 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Dropdown Menu */}
-      {isOpen && (
-        
-        <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-               
-                className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 dark:text-gray-300 hover:text-blue-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                {link.name}
-              </Link>
-            ))}
-          </div>
+      <div
+        className={`md:hidden overflow-hidden transition-all duration-800 ease-in-out ${
+          isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <div className="bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center shadow-lg">
+          {navLinks.map((link) => (
+            <Link
+              key={link.name}
+              href={link.href}
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 dark:text-gray-300 hover:text-blue-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              {link.name}
+            </Link>
+          ))}
         </div>
-      )}
+      </div>
     </nav>
   );
 };
