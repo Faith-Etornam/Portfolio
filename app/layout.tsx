@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     siteName: "Faith Etornam Gbadegbe Portfolio",
     images: [
       {
-        url: "/profile.png",
+        url: "/profile.jpg",
         width: 1200,
         height: 630,
         alt: "Faith Etornam Gbadegbe - Backend Engineer",
