@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Menu, Moon, Sun, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -10,6 +10,7 @@ const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   const toggleTheme = () => {
+    console.log("Toggle Button Clicked");
     setDarkMode(!darkMode);
     if (document.documentElement.classList.contains("dark")) {
       document.documentElement.classList.remove("dark");

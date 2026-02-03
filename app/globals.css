@@ -1,7 +1,11 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* This forces Tailwind to look for the class .dark */
+@custom-variant dark (&:where(.dark, .dark *));
 
+@layer base {
+  body {
+    /* Sets default colors so you can see the change immediately */
+    @apply bg-white text-black dark:bg-black dark:text-white transition-colors duration-300;
+  }
+}
