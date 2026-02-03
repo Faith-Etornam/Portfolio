@@ -7,7 +7,6 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 const Hero = () => {
   return (
     <section className="relative w-full min-h-screen bg-white dark:bg-gray-900 flex flex-col md:flex-row overflow-hidden transition-colors duration-300">
-   
       <div className="w-full md:w-1/2 flex flex-col justify-center px-6 sm:px-12 lg:px-20 pt-24 pb-12 z-10">
         {/* Intro Tag */}
         <div className="mb-4 animate-fade-in-up">
@@ -22,16 +21,18 @@ const Hero = () => {
         </h1>
 
         {/* Sub-headline */}
-        <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-lg leading-relaxed">
-          A Full-Stack Developer specializing in{" "}
-          <strong className="text-gray-900 dark:text-white">
+        <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl mb-6">
+          I am a Full-Stack Engineer who bridges the gap between data-heavy
+          backends and interactive frontends. Specializing in{" "}
+          <span className="font-semibold text-blue-600 dark:text-blue-400">
             Python (Django)
-          </strong>{" "}
-          backend systems and modern{" "}
-          <strong className="text-gray-900 dark:text-white">
+          </span>{" "}
+          for scalable server-side architecture, I extend those capabilities
+          with{" "}
+          <span className="font-semibold text-blue-600 dark:text-blue-400">
             React & Next.js
-          </strong>{" "}
-          frontends.
+          </span>{" "}
+          to build high-performance web applications.
         </p>
 
         {/* CTA Buttons */}
@@ -78,12 +79,9 @@ const Hero = () => {
         </div>
       </div>
 
-      
       <div className="w-full md:w-1/2 flex items-center justify-center p-10 md:p-0 relative bg-gray-50 dark:bg-gray-800/50 md:bg-transparent md:dark:bg-transparent">
-        
         <div className="absolute w-72 h-72 md:w-96 md:h-96 bg-blue-200 dark:bg-blue-900 rounded-full blur-3xl opacity-30 animate-pulse"></div>
 
-        
         <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-[450px] md:h-[450px] rounded-full border-4 border-white dark:border-gray-800 shadow-2xl overflow-hidden z-10">
           <Image
             src="/profile.jpg"

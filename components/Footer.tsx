@@ -50,12 +50,12 @@ const Footer = () => {
             {/* Social Icons */}
             <div className="flex space-x-4 pt-2">
               <SocialLink
-                href="https://github.com/yourusername"
+                href="https://github.com/Faith-Etornam"
                 icon={<FaGithub />}
                 label="GitHub"
               />
               <SocialLink
-                href="https://linkedin.com/in/yourusername"
+                href="https://github.com/Faith-Etornam"
                 icon={<FaLinkedin />}
                 label="LinkedIn"
               />
