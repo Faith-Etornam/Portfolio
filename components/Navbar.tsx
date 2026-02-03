@@ -10,7 +10,6 @@ const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
 
   const toggleTheme = () => {
-    console.log("Toggle Button Clicked");
     setDarkMode(!darkMode);
     if (document.documentElement.classList.contains("dark")) {
       document.documentElement.classList.remove("dark");
