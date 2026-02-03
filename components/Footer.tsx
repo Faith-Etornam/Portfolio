@@ -14,11 +14,11 @@ const Footer = () => {
       label: "Github",
     },
     {
-      href: "https://github.com/Faith-Etornam",
+      href: "https://linkedin.com/Faith-Etornam",
       icon: <FaLinkedin />,
       label: "LinkedIn",
     },
-    { href: "https://github.com/Faith-Etornam", icon: <Mail />, label: "Mail" },
+    { href: "mailto:faithgbadegbe1@gmail.com", icon: <Mail />, label: "Mail" },
   ];
 
   return (
