@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Metadata } from "next";
 
@@ -18,6 +19,7 @@ const Services = () => {
   return (
     <>
       <Navbar />
+      <Footer />
     </>
   );
 };
