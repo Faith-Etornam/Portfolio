@@ -5,10 +5,10 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "My Projects",
   description:
-    "Explore the technical portfolio of Faith Etornam Gbadegbe. Featuring scalable backend APIs, secure database architectures, and full-stack applications built with Python, Django, and React.js.",
+    "Explore the technical portfolio of Faith Etornam. Featuring scalable backend APIs, secure database architectures, and full-stack applications built with Python, Django, and React.js.",
 
   openGraph: {
-    title: "My Projects | Faith Etornam Gbadegbe",
+    title: "My Projects | Faith Etornam",
     description:
       "A showcase of backend engineering projects and dynamic web applications. View source code and live demos.",
     url: "/projects",

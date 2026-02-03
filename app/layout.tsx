@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   metadataBase: baseUrl,
   
   title: {
-    default: "Faith Etornam Gbadegbe | Software Engineer",
-    template: "%s | Faith Etornam Gbadegbe",
+    default: "Faith Etornam  | Software Engineer",
+    template: "%s | Faith Etornam",
   },
   description:
     "I build scalable APIs and secure databases using Python & Django. A Backend Engineer with additional frontend capabilities in React.js and Next.js.",
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
     "ALX Certified Backend Developer",
   ],
 
-  authors: [{ name: "Faith Etornam Gbadegbe" }],
-  creator: "Faith Etornam Gbadegbe",
+  authors: [{ name: "Faith Etornam" }],
+  creator: "Faith Etornam",
 
   robots: {
     index: true,
@@ -56,17 +56,17 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Faith Etornam Gbadegbe | Python & JavaScript Developer",
+    title: "Faith Etornam | Python & JavaScript Developer",
     description:
-      "Explore the portfolio of Faith Etornam Gbadegbe. Specializing Backend Development using Python/Django, Frontend Development using React.js/Next.js development.",
+      "Explore the portfolio of Faith Etornam. Specializing Backend Development using Python/Django, Frontend Development using React.js/Next.js development.",
     url: `${baseUrl}/`,
-    siteName: "Faith Etornam Gbadegbe Portfolio",
+    siteName: "Faith Etornam Portfolio",
     images: [
       {
         url: "/profile.jpg",
         width: 1200,
         height: 630,
-        alt: "Faith Etornam Gbadegbe - Backend Engineer",
+        alt: "Faith Etornam - Backend Engineer",
       },
     ],
     locale: "en_US",
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Faith Etornam Gbadegbe | Python & JavaScript Developer",
+    title: "Faith Etornam | Python & JavaScript Developer",
     description:
       "Backend Developer specializing in Django and React.js. View my projects and technical articles.",
     images: [
@@ -84,7 +84,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-  publisher: "Faith Etornam Gbadegbe",
+  publisher: "Faith Etornam",
   verification: {
     // verification from google
   }
