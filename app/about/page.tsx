@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
 const About = () => {
   return (
     <div>
-      <p>About Page</p>
+      <Navbar />
     </div>
   );
 };

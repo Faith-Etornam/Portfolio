@@ -1,7 +1,7 @@
+import Navbar from "@/components/Navbar";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-
   title: "Contact Me",
 
   description:
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
 
 const Contact = () => {
   return (
-    <div>
-      <h1>Contact Page</h1>
-    </div>
+    <>
+      <Navbar />
+    </>
   );
 };
 

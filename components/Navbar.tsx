@@ -110,7 +110,7 @@ const Navbar = () => {
       {isOpen && (
         
         <div className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
