@@ -1,8 +1,7 @@
-import React from "react";
-import Link from "next/link";
 import Image from "next/image";
-// Assuming you are using react-icons as discussed, otherwise swap for your preferred icon method
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import FooterLink from "./FooterLink";
+import SocialLink from "./SocialLink";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -115,29 +114,6 @@ const Footer = () => {
   );
 };
 
-// Helper Component for List Links
-const FooterLink = ({ href, label }) => (
-  <li>
-    <Link
-      href={href}
-      className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 text-sm"
-    >
-      {label}
-    </Link>
-  </li>
-);
 
-// Helper Component for Social Icons
-const SocialLink = ({ href, icon, label }) => (
-  <Link
-    href={href}
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label={label}
-    className="text-gray-500 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 text-xl"
-  >
-    {icon}
-  </Link>
-);
 
 export default Footer;
