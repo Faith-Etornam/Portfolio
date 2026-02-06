@@ -80,13 +80,14 @@ export const metadata: Metadata = {
       "Backend Developer specializing in Django and React.js. View my projects and technical articles.",
     images: [
       {
-        url: "/profile.png",
+        url: "/profile.jpg",
       },
     ],
   },
   publisher: "Faith Etornam",
   verification: {
-    // verification from google
+    google: 'google verification code here',
+    other: {}
   }
 };
 

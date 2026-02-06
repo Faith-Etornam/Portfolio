@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, Mail } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import {HeroImage} from "./HeroImage";
+import HeroImage from "./HeroImage";
 
 const Hero = () => {
   return (
