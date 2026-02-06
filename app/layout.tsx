@@ -66,7 +66,7 @@ export const metadata: Metadata = {
         url: "/profile.jpg",
         width: 1200,
         height: 630,
-        alt: "Faith Etornam - Backend Engineer",
+        alt: "Faith Etornam - Software Engineer",
       },
     ],
     locale: "en_US",
@@ -84,6 +84,7 @@ export const metadata: Metadata = {
       },
     ],
   },
+  
   publisher: "Faith Etornam",
   verification: {
     google: 'google verification code here',

@@ -74,7 +74,6 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Dark Mode Toggle Button (Desktop) */}
           <div>
             <button
               onClick={toggleTheme}
