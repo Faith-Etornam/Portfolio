@@ -117,6 +117,7 @@ export default function ServicesSection() {
               key={index}
               variants={cardVariants}
               whileHover={{ y: -10 }}
+              transition={{delay : 0.2 * index}}
               className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700 flex flex-col h-full"
             >
               <div className="mb-6 p-4 bg-gray-50 dark:bg-gray-700/50 rounded-xl w-fit">

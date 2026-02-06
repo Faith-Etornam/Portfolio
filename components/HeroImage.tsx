@@ -54,7 +54,7 @@ const HeroImage = () => {
         whileHover={!isExpanded ? "hover" : undefined}
         viewport={{ once: true }}
         onClick={() => setIsExpanded(true)}
-        className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-112.5 md:h-112.5 rounded-full border-4 border-white dark:border-gray-800 shadow-2xl overflow-hidden z-10 cursor-pointer"
+        className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-112.5 md:h-112.5 rounded-full border-white dark:border-gray-800 shadow-2xl overflow-hidden z-10 cursor-pointer"
       >
         <motion.div variants={imageVariants} className="w-full h-full relative">
           <Image
