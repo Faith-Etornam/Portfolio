@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Mail } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import {HeroImage} from "./HeroImage";
 
 const Hero = () => {
   return (
@@ -74,15 +74,7 @@ const Hero = () => {
       <div className="w-full md:w-1/2 flex items-center justify-center p-10 md:p-0 relative bg-gray-50 dark:bg-gray-800/50 md:bg-transparent md:dark:bg-transparent">
         <div className="absolute w-72 h-72 md:w-96 md:h-96 bg-blue-200 dark:bg-blue-900 rounded-full blur-3xl opacity-30 animate-pulse"></div>
 
-        <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-[450px] md:h-[450px] rounded-full border-4 border-white dark:border-gray-800 shadow-2xl overflow-hidden z-10">
-          <Image
-            src="/profile.jpg"
-            alt="Faith Etornam Gbadegbe"
-            fill
-            className="object-cover"
-            priority
-          />
-        </div>
+        <HeroImage />
       </div>
     </section>
   );
