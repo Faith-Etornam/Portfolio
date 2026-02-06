@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Mail } from "lucide-react";
@@ -7,16 +6,14 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 const Hero = () => {
   return (
     <section className="relative w-full min-h-screen bg-white dark:bg-gray-900 flex flex-col md:flex-row overflow-hidden transition-colors duration-200">
-      <div className="w-full md:w-1/2 flex flex-col justify-center px-6 sm:px-12 lg:px-20 pt-24 pb-12 z-10">
-       
-
+      <div className="w-full min-h-screen md:w-1/2 flex flex-col justify-center px-6 sm:px-12 lg:px-20 pt-24 pb-12 z-10">
         {/* Headline */}
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight mb-6">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight mb-6 text-center md:text-left">
           Hi, I&apos;m <span className="text-blue-600">Faith Etornam</span>
         </h1>
 
         {/* Sub-headline */}
-        <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl mb-6">
+        <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl mb-6 text-center md:text-left">
           I am a Full-Stack Engineer who bridges the gap between data-heavy
           backends and interactive frontends. Specializing in{" "}
           <span className="font-semibold text-blue-600 dark:text-blue-400">
@@ -31,7 +28,7 @@ const Hero = () => {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 mb-10">
+        <div className="flex flex-col md:flex-row gap-4 mb-10">
           <Link
             href="/projects"
             className="px-8 py-3.5 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-all flex items-center justify-center gap-2 shadow-lg shadow-blue-500/30"
@@ -48,7 +45,7 @@ const Hero = () => {
         </div>
 
         {/* Social Links */}
-        <div className="flex items-center gap-6 text-gray-500 dark:text-gray-400">
+        <div className="flex items-center gap-6 text-gray-500 dark:text-gray-400 justify-center md:justify-start">
           <Link
             href="https://github.com/Faith-Etornam"
             target="_blank"

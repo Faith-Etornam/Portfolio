@@ -61,7 +61,6 @@ export default function FAQSection() {
           </p>
         </motion.div>
 
-        {/* Accordion List - NOW ANIMATED WITH STAGGER */}
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <motion.div
@@ -69,7 +68,7 @@ export default function FAQSection() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ delay: index * 0.1, duration: 0.4 }} // Stagger effect
+              transition={{ delay: index * 0.1, duration: 0.4 }} 
               className="bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden"
             >
               <button
@@ -88,7 +87,7 @@ export default function FAQSection() {
                 </motion.div>
               </button>
 
-              {/* Answer Body */}
+              
               <AnimatePresence>
                 {activeIndex === index && (
                   <motion.div

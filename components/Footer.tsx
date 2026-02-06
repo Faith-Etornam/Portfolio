@@ -60,6 +60,9 @@ const Footer = () => {
 
             {/* Social Icons */}
             <div className="flex space-x-4 pt-2">
+
+              {}
+
               <SocialLink
                 href="https://github.com/Faith-Etornam"
                 icon={<FaGithub />}

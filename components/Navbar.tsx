@@ -40,7 +40,7 @@ const Navbar = () => {
     <nav className="bg-white shadow-md dark:bg-gray-900 w-full fixed top-0 left-0 z-50 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0 flex items-center">
+          <div className="shrink-0 flex items-center">
             <Link
               href="/"
               className="text-2xl font-bold text-gray-800 dark:text-white tracking-wide flex items-center transition-colors"
@@ -50,11 +50,11 @@ const Navbar = () => {
                 alt="Faith Etornam Gbadegbe Profile Picture"
                 width={40}
                 height={40}
-                className="w-10 h-10 rounded-full object-cover flex-shrink-0 border-2 border-transparent hover:border-blue-600 transition-colors duration-300 mr-3"
+                className="w-10 h-10 rounded-full object-cover shrink-0 border-2 border-transparent hover:border-blue-600 transition-colors duration-300 mr-3"
               />
               <span>
                 Faith Etor
-                <span className="bg-gradient-to-r from-blue-600 to-transparent bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-blue-600 to-transparent bg-clip-text text-transparent">
                   nam
                 </span>
               </span>
