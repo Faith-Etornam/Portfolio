@@ -53,16 +53,16 @@ const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.2 },
+    transition: { staggerChildren: 0.3, delayChildren: 0.1 },
   },
 };
 
 const cardVariants: Variants = {
-  hidden: { y: 20, opacity: 0 },
+  hidden: { y: 40, opacity: 0 },
   visible: {
     y: 0,
     opacity: 1,
-    transition: { type: "spring", stiffness: 100 },
+    transition: { type: "spring", stiffness: 100, damping: 15 },
   },
 };
 
@@ -117,7 +117,6 @@ export default function ServicesSection() {
               key={index}
               variants={cardVariants}
               whileHover={{ y: -10 }}
-              transition={{delay : 0.2 * index}}
               className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700 flex flex-col h-full"
             >
               <div className="mb-6 p-4 bg-gray-50 dark:bg-gray-700/50 rounded-xl w-fit">
