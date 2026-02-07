@@ -106,12 +106,12 @@ export default function PrivacyPolicy() {
                 If you have any questions about this Privacy Policy, please
                 contact me directly.
               </p>
-              <a
+              <Link
                 href="mailto:ce-fgbadegbe9423@st.umat.edu.gh"
                 className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg transition-colors"
               >
                 Send an Email
-              </a>
+              </Link>
             </div>
           </div>
         </div>

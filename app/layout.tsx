@@ -24,6 +24,9 @@ export const metadata: Metadata = {
   },
   description:
     "I build scalable APIs and secure databases using Python & Django. A Backend Engineer with additional frontend capabilities in React.js and Next.js.",
+    icons: {
+      icon: '/favicon.jpg',
+    },
 
   keywords: [
     "Faith Etornam Gbadegbe",
@@ -88,7 +91,6 @@ export const metadata: Metadata = {
   publisher: "Faith Etornam",
   verification: {
     google: 'google verification code here',
-    other: {}
   }
 };
 
