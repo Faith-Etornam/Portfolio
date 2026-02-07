@@ -1,11 +1,10 @@
 import React from "react";
-import StatCard from "./StatCard";
+import StatCard from "../StatCard";
 import Image from "next/image";
 import { Download, Terminal } from "lucide-react";
 import Link from "next/link";
 
 const AboutMe = () => {
-    
   const statCard = [
     { number: "2+", label: "Years Coding" },
     { number: "5+", label: "Projects Built" },

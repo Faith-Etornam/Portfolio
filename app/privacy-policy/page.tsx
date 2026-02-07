@@ -36,7 +36,7 @@ export default function PrivacyPolicy() {
           {/* Content Wrapper */}
           <div className="prose prose-lg prose-blue dark:prose-invert max-w-none">
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-              At <strong>Faith Etornam's Portfolio</strong>, I prioritize your
+              At <strong>Faith Etornam&apos;s Portfolio</strong>, I prioritize your
               privacy. This document outlines the minimal information collected
               when you interact with this website.
             </p>
@@ -107,7 +107,7 @@ export default function PrivacyPolicy() {
                 contact me directly.
               </p>
               <a
-                href="mailto:ce-fgbadegbe9423@st.umat.edu.gh" // Updated to your student email
+                href="mailto:ce-fgbadegbe9423@st.umat.edu.gh"
                 className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-lg transition-colors"
               >
                 Send an Email
