@@ -4,25 +4,24 @@ import Link from "next/link";
 import { ExternalLink, Award } from "lucide-react";
 
 const Certificates = () => {
-  // Add your actual certificates here
   const certificates = [
     {
       id: 1,
-      title: "ALX Software Engineering",
-      issuer: "ALX Africa / Holberton School",
-      date: "2025",
-      image: "/cert-alx.jpg", // Make sure to add this image to your public folder
-      link: "https://intranet.alxswe.com/certificates/your-id", // Replace with actual link
+      title: "Frontend Development Internship",
+      issuer: "Ideation Axis",
+      date: "2024",
+      image: "/cert-alx.jpg", 
+      link: '#'
     },
     {
       id: 2,
       title: "Backend Development (Python)",
-      issuer: "HackerRank",
+      issuer: "ALX",
       date: "2024",
       image: "/cert-python.jpg",
       link: "#",
     },
-    // Add more as needed
+
   ];
 
   return (
@@ -68,7 +67,7 @@ const Certificates = () => {
               </div>
 
               {/* Content Area */}
-              <div className="p-6 flex flex-col flex-grow">
+              <div className="p-6 flex flex-col grow">
                 <div className="mb-auto">
                   <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                     {cert.title}
