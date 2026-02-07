@@ -1,0 +1,103 @@
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { ExternalLink, Award } from "lucide-react";
+
+const Certificates = () => {
+  // Add your actual certificates here
+  const certificates = [
+    {
+      id: 1,
+      title: "ALX Software Engineering",
+      issuer: "ALX Africa / Holberton School",
+      date: "2025",
+      image: "/cert-alx.jpg", // Make sure to add this image to your public folder
+      link: "https://intranet.alxswe.com/certificates/your-id", // Replace with actual link
+    },
+    {
+      id: 2,
+      title: "Backend Development (Python)",
+      issuer: "HackerRank",
+      date: "2024",
+      image: "/cert-python.jpg",
+      link: "#",
+    },
+    // Add more as needed
+  ];
+
+  return (
+    <section className="py-20 px-6 lg:px-20 bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 transition-colors duration-300">
+      <div className="max-w-7xl mx-auto">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <div className="flex items-center justify-center gap-2 text-blue-600 font-semibold uppercase tracking-wider text-sm mb-2">
+            <Award size={18} />
+            <span>Credentials</span>
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            Licenses & Certifications
+          </h2>
+          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            Validating my expertise through recognized industry standards.
+          </p>
+        </div>
+
+        {/* Certificates Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {certificates.map((cert) => (
+            <div
+              key={cert.id}
+              className="group relative bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-all duration-300 flex flex-col"
+            >
+              {/* Certificate Image Area */}
+              <div className="relative h-48 w-full overflow-hidden bg-gray-200 dark:bg-gray-700">
+                {/* Fallback for missing image - shows icon if no image found */}
+                <div className="absolute inset-0 flex items-center justify-center text-gray-400">
+                  <Award size={48} opacity={0.2} />
+                </div>
+
+                <Image
+                  src={cert.image}
+                  alt={cert.title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+
+                {/* Overlay on Hover */}
+                <div className="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition-colors duration-300" />
+              </div>
+
+              {/* Content Area */}
+              <div className="p-6 flex flex-col flex-grow">
+                <div className="mb-auto">
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                    {cert.title}
+                  </h3>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
+                    {cert.issuer}
+                  </p>
+                  <p className="text-xs text-gray-400 dark:text-gray-500 font-medium">
+                    Issued {cert.date}
+                  </p>
+                </div>
+
+                {/* Link Button */}
+                <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
+                  <Link
+                    href={cert.link}
+                    target="_blank"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:gap-3 transition-all"
+                  >
+                    Show Credential <ExternalLink size={16} />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Certificates;
