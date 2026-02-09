@@ -15,18 +15,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-
   metadataBase: baseUrl,
-  
+
   title: {
     default: "Faith Etornam  | Software Engineer",
     template: "%s | Faith Etornam",
   },
   description:
     "I build scalable APIs and secure databases using Python & Django. A Backend Engineer with additional frontend capabilities in React.js and Next.js.",
-    icons: {
-      icon: '/favicon.jpg',
-    },
+  icons: {
+    icon: "/favicon.jpg",
+  },
 
   keywords: [
     "Faith Etornam Gbadegbe",
@@ -66,7 +65,7 @@ export const metadata: Metadata = {
     siteName: "Faith Etornam Portfolio",
     images: [
       {
-        url: "/profile.jpg",
+        url: `${baseUrl}/profile.jpg`,
         width: 1200,
         height: 630,
         alt: "Faith Etornam - Software Engineer",
@@ -83,15 +82,15 @@ export const metadata: Metadata = {
       "Backend Developer specializing in Django and React.js. View my projects and technical articles.",
     images: [
       {
-        url: "/profile.jpg",
+        url: `${baseUrl}/profile.jpg`,
       },
     ],
   },
-  
+
   publisher: "Faith Etornam",
   verification: {
-    google: 'google verification code here',
-  }
+    google: "google verification code here",
+  },
 };
 
 export default function RootLayout({

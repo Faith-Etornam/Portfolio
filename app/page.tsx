@@ -1,4 +1,4 @@
-import Accordion from "@/components/Accordion";
+import Accordion from "@/components/Home/Accordion";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Home/HeroPage";

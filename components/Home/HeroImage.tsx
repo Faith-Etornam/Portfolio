@@ -8,7 +8,6 @@ import { X } from "lucide-react";
 const HeroImage = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
-
   useEffect(() => {
     if (isExpanded) {
       document.body.style.overflow = "hidden";

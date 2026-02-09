@@ -59,25 +59,15 @@ const Footer = () => {
             </p>
 
             {/* Social Icons */}
-            <div className="flex space-x-4 pt-2">
-
-              {}
-
-              <SocialLink
-                href="https://github.com/Faith-Etornam"
-                icon={<FaGithub />}
-                label="GitHub"
-              />
-              <SocialLink
-                href="https://github.com/Faith-Etornam"
-                icon={<FaLinkedin />}
-                label="LinkedIn"
-              />
-              <SocialLink
-                href="https://twitter.com/yourusername"
-                icon={<FaTwitter />}
-                label="Twitter"
-              />
+            <div className="flex items-center space-x-4 pt-2">
+              {socialLinks.map((socialLink, index) => (
+                <SocialLink
+                  key={index}
+                  href={socialLink.href}
+                  icon={socialLink.icon}
+                  label={socialLink.label}
+                />
+              ))}
             </div>
           </div>
 
@@ -94,7 +84,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 3: Legal & Info (Spans 4 columns) */}
+          {/* Legal & Info */}
           <div className="md:col-span-4">
             <h4 className="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider mb-4">
               Legal
@@ -107,14 +97,14 @@ const Footer = () => {
 
             <div className="mt-6 p-4 bg-gray-100 dark:bg-gray-800/50 rounded-lg">
               <p className="text-xs text-gray-500 dark:text-gray-400 italic">
-                &quot;May the spirit that blessed the ones before us give us
-                the courage to make our lives a blessing&quot;
+                &quot;May the spirit that blessed the ones before us give us the
+                courage to make our lives a blessing&quot;
               </p>
             </div>
           </div>
         </div>
 
-        {/* Bottom Section: Copyright */}
+        {/* Copyright */}
         <div className="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-500 dark:text-gray-400">
             &copy; {currentYear} Faith Etornam. All rights reserved.
