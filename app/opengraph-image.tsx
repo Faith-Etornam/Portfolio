@@ -10,11 +10,10 @@ export const size = {
   width: 1200,
   height: 630,
 };
-export const contentType = "image/png";
+export const contentType = "image/jpg";
 
 export default async function Image() {
-  // ⚠️ IMPORTANT: Replace this with your ACTUAL deployed domain
-  // Ideally use process.env.NEXT_PUBLIC_SITE_URL if available
+
   const profilePicUrl = "https://portfolio-ashen-psi.vercel.app/profile.jpg";
 
   return new ImageResponse(
@@ -26,11 +25,10 @@ export default async function Image() {
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "space-between",
-        backgroundColor: "#0f172a", // Dark slate/black
+        backgroundColor: "#0f172a", 
         padding: "40px 80px",
       }}
     >
-      {/* Left Side: Text Content */}
       <div
         style={{
           display: "flex",
@@ -54,7 +52,7 @@ export default async function Image() {
         <div
           style={{
             fontSize: 32,
-            color: "#94a3b8", // Light gray
+            color: "#94a3b8", 
             marginBottom: 40,
             fontWeight: 500,
           }}
@@ -62,13 +60,13 @@ export default async function Image() {
           Backend Engineer & Full Stack Developer
         </div>
 
-        {/* The "Call to Action" Button */}
+
         <div
           style={{
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            backgroundColor: "#3b82f6", // Blue button
+            backgroundColor: "#3b82f6", 
             color: "white",
             padding: "16px 40px",
             fontSize: 24,
@@ -81,8 +79,7 @@ export default async function Image() {
         </div>
       </div>
 
-      {/* Right Side: Your Profile Picture */}
-      {/* We fix the lint error by adding alt="" and disabling the warning */}
+      
       <img
         src={profilePicUrl}
         alt="Faith Etornam Profile"
