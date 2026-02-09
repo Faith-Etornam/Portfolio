@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Faith Etornam | Python & JavaScript Developer",
+    title: "Faith Etornam | Software Engineer (Python & JavaScript Developer)",
     description:
       "Explore the portfolio of Faith Etornam. Specializing Backend Development using Python/Django, Frontend Development using React.js/Next.js development.",
     url: "/",
