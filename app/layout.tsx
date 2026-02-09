@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://localhost:3000";
+const baseUrl = "https://portfolio-ashen-psi.vercel.app/";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
