@@ -5,13 +5,12 @@ export const runtime = "edge";
 
 export const alt = "Faith Etornam - Backend Engineer";
 
-// 1. CHANGE THIS: Double the dimensions
 export const size = {
-  width: 2400,
-  height: 1260,
+  width: 1200,
+  height: 630,
 };
 
-export const contentType = "image/png";
+export const contentType = "image/jpg";
 
 export default async function Image() {
   const profilePicUrl = "https://portfolio-ashen-psi.vercel.app/profile.jpg";
@@ -24,10 +23,9 @@ export default async function Image() {
         display: "flex",
         flexDirection: "row",
         alignItems: "center",
-        justifyContent: "space-between",
+        justifyContent: "center",
         backgroundColor: "#0f172a",
-        // 2. CHANGE THIS: Double the padding to match new scale
-        padding: "40px 80px",
+        gap: "20px",
       }}
     >
       <div
@@ -35,19 +33,20 @@ export default async function Image() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
+          alignItems: "flex-start", 
+          maxWidth: "600px", 
         }}
       >
         <div
           style={{
-            // 3. CHANGE THIS: Use specific fonts/weights.
-            // Note: System fonts can be slightly blurry in OG images without a custom font file.
-            fontSize: 60,
+            fontSize: 70, 
             fontWeight: 900,
             color: "white",
-            marginBottom: 20,
-            letterSpacing: "-0.02em",
-            lineHeight: 1.1,
-            fontFamily: '"Inter", sans-serif', // Explicit font stack
+            marginBottom: 10,
+            letterSpacing: "-0.03em",
+            lineHeight: 1,
+            fontFamily: '"Inter", sans-serif',
+            textShadow: "0 4px 4px rgba(0,0,0,0.4)",
           }}
         >
           Faith Etornam
@@ -55,11 +54,12 @@ export default async function Image() {
 
         <div
           style={{
-            fontSize: 30,
-            color: "#94a3b8",
+            fontSize: 32,
+            color: "#cbd5e1",
             marginBottom: 40,
-            fontWeight: 500,
+            fontWeight: 600,
             fontFamily: "sans-serif",
+            lineHeight: 1.3,
           }}
         >
           Backend Engineer & Full Stack Developer
@@ -73,33 +73,32 @@ export default async function Image() {
             backgroundColor: "#3b82f6",
             color: "white",
             padding: "16px 40px",
-            fontSize: 24,
-            fontWeight: 600,
+            fontSize: 26,
+            fontWeight: 700,
             borderRadius: 12,
-            boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
+            boxShadow: "0 6px 12px -2px rgba(0, 0, 0, 0.4)",
           }}
         >
           View Portfolio
         </div>
       </div>
 
-      {/* 4. CRITICAL CHECK: Ensure your profile.jpg is at least 500x500px on your computer! */}
+      {/* IMAGE SIDE */}
       <img
         src={profilePicUrl}
         alt="Faith Etornam Profile"
-        width="640"
-        height="640"
+        width="500"
+        height="500"
         style={{
           borderRadius: "50%",
-          border: "8px solid rgba(255,255,255,0.1)",
+          border: "8px solid rgba(255,255,255,0.15)",
           objectFit: "cover",
-          imageRendering: "smooth",
+          boxShadow: "0 10px 20px rgba(0,0,0,0.5)", 
         }}
       />
     </div>,
     {
       ...size,
-      // 5. ADD THIS: High quality emoji support
       emoji: "twemoji",
     },
   );
