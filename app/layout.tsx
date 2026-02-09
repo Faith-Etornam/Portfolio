@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
 
   title: {
-    default: "Faith Etornam  | Software Engineer",
+    default: "Faith Etornam | Backend Engineer & Full Stack Developer",
     template: "%s | Faith Etornam",
   },
   description:
@@ -64,14 +64,6 @@ export const metadata: Metadata = {
       "Explore the portfolio of Faith Etornam. Specializing Backend Development using Python/Django, Frontend Development using React.js/Next.js development.",
     url: "/",
     siteName: "Faith Etornam Portfolio",
-    images: [
-      {
-        url: "/profile.jpg",
-        width: 1200,
-        height: 800,
-        alt: "Faith Etornam - Software Engineer",
-      },
-    ],
     locale: "en_US",
     type: "website",
   },
