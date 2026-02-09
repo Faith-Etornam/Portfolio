@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     siteName: "Faith Etornam Portfolio",
     images: [
       {
-        url: `${baseUrl}/profile.jpg`,
+        url: `https://portfolio-ashen-psi.vercel.app/profile.jpg`,
         width: 1200,
         height: 630,
         alt: "Faith Etornam - Software Engineer",
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
       "Backend Developer specializing in Django and React.js. View my projects and technical articles.",
     images: [
       {
-        url: `${baseUrl}/profile.jpg`,
+        url: `https://portfolio-ashen-psi.vercel.app/profile.jpg`,
       },
     ],
   },
