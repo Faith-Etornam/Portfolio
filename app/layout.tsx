@@ -68,7 +68,7 @@ export const metadata: Metadata = {
       {
         url: "/profile.jpg",
         width: 1200,
-        height: 630,
+        height: 800,
         alt: "Faith Etornam - Software Engineer",
       },
     ],
