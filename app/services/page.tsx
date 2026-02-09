@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     description:
       "Expert Backend Engineering and Web Development services. Specializing in scalable APIs and secure Python/Django architectures.",
     url: "/services",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Faith Etornam Contact",
+      },
+    ],
   },
 };
 

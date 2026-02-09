@@ -12,6 +12,14 @@ export const metadata: Metadata = {
     description:
       "A showcase of backend engineering projects and dynamic web applications. View source code and live demos.",
     url: "/projects",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "Faith Etornam Contact",
+      },
+    ],
   },
 };
 
