@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: baseUrl,
+  metadataBase: new URL(baseUrl),
 
   title: {
     default: "Faith Etornam  | Software Engineer",
@@ -61,11 +61,11 @@ export const metadata: Metadata = {
     title: "Faith Etornam | Python & JavaScript Developer",
     description:
       "Explore the portfolio of Faith Etornam. Specializing Backend Development using Python/Django, Frontend Development using React.js/Next.js development.",
-    url: `${baseUrl}/`,
+    url: "/",
     siteName: "Faith Etornam Portfolio",
     images: [
       {
-        url: `https://portfolio-ashen-psi.vercel.app/profile.jpg`,
+        url: "/profile.jpg",
         width: 1200,
         height: 630,
         alt: "Faith Etornam - Software Engineer",
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
       "Backend Developer specializing in Django and React.js. View my projects and technical articles.",
     images: [
       {
-        url: `https://portfolio-ashen-psi.vercel.app/profile.jpg`,
+        url: "/profile.jpg",
       },
     ],
   },
