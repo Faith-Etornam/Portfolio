@@ -4,7 +4,6 @@ import "./globals.css";
 
 const baseUrl = "https://portfolio-ashen-psi.vercel.app/";
 
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -73,11 +72,6 @@ export const metadata: Metadata = {
     title: "Faith Etornam | Python & JavaScript Developer",
     description:
       "Backend Developer specializing in Django and React.js. View my projects and technical articles.",
-    images: [
-      {
-        url: "/profile.jpg",
-      },
-    ],
   },
 
   publisher: "Faith Etornam",
