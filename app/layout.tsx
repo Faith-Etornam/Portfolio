@@ -104,10 +104,11 @@ export default function RootLayout({
                 "https://www.linkedin.com/in/faith-etornam",
                 "https://github.com/faith-etornam",
               ],
+              email: "mailto:faithgbadegbe1@gmail.com",
               jobTitle: "Backend Engineer",
               worksFor: {
                 "@type": "Organization",
-                name: "Freelance",
+                name: "Self-employed",
               },
             }),
           }}
