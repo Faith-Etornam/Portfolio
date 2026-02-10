@@ -72,7 +72,6 @@ export const metadata: Metadata = {
     title: "Faith Etornam | Python & JavaScript Developer",
     description:
       "Backend Developer specializing in Django and React.js. View my projects and technical articles.",
-  
   },
 
   publisher: "Faith Etornam",
@@ -97,28 +96,87 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
+              "@id": `${baseUrl}/#person`,
               name: "Faith Etornam",
               gender: "Male",
-              url: "https://portfolio-ashen-psi.vercel.app",
-              image: "https://portfolio-ashen-psi.vercel.app/profile.jpg",
-              sameAs: [
-                "https://www.linkedin.com/in/faith-etornam",
-                "https://github.com/faith-etornam",
-              ],
+              url: baseUrl,
+              image: `${baseUrl}/profile.jpg`,
+              publisher: {
+                "@type": "Person",
+                "@id": `${baseUrl}/#person`,
+              },
+              description:
+                "Backend Engineer specializing in scalable APIs with Python, Django, and Next.js.",
+
+              email: "mailto:faithgbadegbe1@gmail.com",
+
+              nationality: {
+                "@type": "Country",
+                name: "Ghana",
+              },
+
               address: {
                 "@type": "PostalAddress",
                 addressLocality: "Accra",
                 addressCountry: "Ghana",
               },
-              email: "mailto:faithgbadegbe1@gmail.com",
-              jobTitle: "Backend Engineer",
+
+              sameAs: [
+                "https://www.linkedin.com/in/faith-etornam",
+                "https://github.com/faith-etornam",
+                "https://twitter.com/faith_etornam",
+              ],
+
               worksFor: {
                 "@type": "Organization",
                 name: "Self-employed",
               },
+
+              hasOccupation: [
+                {
+                  "@type": "Occupation",
+                  name: "Backend Engineer",
+                  skills: "Python, Django, Django Rest Framework, API Design",
+                },
+                {
+                  "@type": "Occupation",
+                  name: "Student",
+                },
+              ],
+
+              affiliation: {
+                "@type": "CollegeOrUniversity",
+                name: "University of Mines and Technology",
+                sameAs: "https://umat.edu.gh/",
+              },
+
+              alumniOf: [
+                {
+                  "@type": "EducationalOrganization",
+                  name: "ALX Africa",
+                  sameAs: "https://www.alxafrica.com/",
+                },
+              ],
+
+              knowsLanguage: ["English"],
+
+              knowsAbout: [
+                "HTML5",
+                "CSS3",
+                "JavaScript",
+                "React.js",
+                "Next.js",
+                "Frontend Development",
+                "Python",
+                "Django",
+                "API Design",
+                "MySQL",
+                "Backend Development",
+              ],
             }),
           }}
         />
+
         {children}
       </body>
     </html>
