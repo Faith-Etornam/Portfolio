@@ -106,10 +106,7 @@ export default function RootLayout({
 
               email: "mailto:faithgbadegbe1@gmail.com",
 
-              nationality: {
-                "@type": "Country",
-                name: "Ghana",
-              },
+              nationality: "Ghanaian",
 
               address: {
                 "@type": "PostalAddress",
@@ -131,7 +128,6 @@ export default function RootLayout({
                 {
                   "@type": "Occupation",
                   name: "Backend Engineer",
-                  skills: "Python, Django, Django Rest Framework, API Design",
                 },
                 {
                   "@type": "Occupation",
