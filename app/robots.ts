@@ -7,7 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    host: "https://faithetornam.com",
+    host: `${baseUrl}`,
     sitemap: `${baseUrl}/sitemap.xml`,
   };
 }
