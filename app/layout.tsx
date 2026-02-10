@@ -76,7 +76,7 @@ export const metadata: Metadata = {
 
   publisher: "Faith Etornam",
   verification: {
-    google: "CUeJ5UdGSfJYQFOzNjjsC9ymp6fcUGQlpYPE9qCoH",
+    google: "CUeJ5UdGSfJYQFOzNjjsC9ymp6fcUGQlpYPE9qCoH2o",
   },
 };
 
