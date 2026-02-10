@@ -101,10 +101,6 @@ export default function RootLayout({
               gender: "Male",
               url: baseUrl,
               image: `${baseUrl}/profile.jpg`,
-              publisher: {
-                "@type": "Person",
-                "@id": `${baseUrl}/#person`,
-              },
               description:
                 "Backend Engineer specializing in scalable APIs with Python, Django, and Next.js.",
 
@@ -124,7 +120,6 @@ export default function RootLayout({
               sameAs: [
                 "https://www.linkedin.com/in/faith-etornam",
                 "https://github.com/faith-etornam",
-                "https://twitter.com/faith_etornam",
               ],
 
               worksFor: {
