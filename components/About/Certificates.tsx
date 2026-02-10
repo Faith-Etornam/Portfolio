@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ExternalLink, Award } from "lucide-react";
@@ -11,30 +10,30 @@ const Certificates = () => {
       issuer: "Ideation Axis",
       date: "2024",
       image: "/ideation-axis.jpg",
-      link: "#",
+      link: "",
     },
     {
       id: 2,
-      title: "Backend Development (Python)",
-      issuer: "ALX",
-      date: "2026",
-      image: "/backend-certificate.png",
-      link: "https://savanna.alxafrica.com/certificates/EHSL5NTF6C",
-    },
-    {
-      id: 3,
       title: "Professional Foundations",
       issuer: "ALX",
       date: "2025",
       image: "/professional-foundations.png",
       link: "https://savanna.alxafrica.com/certificates/6GNznXTcpE",
     },
+    {
+      id: 3,
+      title: "Backend Development (Python)",
+      issuer: "ALX",
+      date: "2026",
+      image: "/backend-certificate.png",
+      link: "https://savanna.alxafrica.com/certificates/EHSL5NTF6C",
+    },
   ];
 
   return (
     <section className="py-20 px-6 lg:px-20 bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 transition-colors duration-300">
       <div className="max-w-7xl mx-auto">
-        {/* Section Header */}
+       
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-2 text-blue-600 font-semibold uppercase tracking-wider text-sm mb-2">
             <Award size={18} />
@@ -73,7 +72,6 @@ const Certificates = () => {
                 <div className="absolute inset-0 bg-blue-900/0 group-hover:bg-blue-900/10 transition-colors duration-300" />
               </div>
 
-              {/* Content Area */}
               <div className="p-6 flex flex-col grow">
                 <div className="mb-auto">
                   <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
@@ -87,15 +85,20 @@ const Certificates = () => {
                   </p>
                 </div>
 
-                {/* Link Button */}
                 <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
-                  <Link
-                    href={cert.link}
-                    target="_blank"
-                    className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:gap-3 transition-all"
-                  >
-                    Show Credential <ExternalLink size={16} />
-                  </Link>
+                  {cert.link ? (
+                    <Link
+                      href={cert.link}
+                      target="_blank"
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 dark:text-blue-400 hover:gap-3 transition-all"
+                    >
+                      Show Credential <ExternalLink size={16} />
+                    </Link>
+                  ) : (
+                    <span className="text-sm text-gray-400 dark:text-gray-500 italic cursor-not-allowed">
+                      No verified link available
+                    </span>
+                  )}
                 </div>
               </div>
             </div>
