@@ -163,6 +163,7 @@ export default function RootLayout({
                 "API Design",
                 "MySQL",
                 "Backend Development",
+                "Docker"
               ],
             }),
           }}

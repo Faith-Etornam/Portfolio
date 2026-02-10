@@ -10,18 +10,25 @@ const Certificates = () => {
       title: "Frontend Development Internship",
       issuer: "Ideation Axis",
       date: "2024",
-      image: "/cert-alx.jpg", 
-      link: '#'
+      image: "/ideation-axis.jpg",
+      link: "#",
     },
     {
       id: 2,
       title: "Backend Development (Python)",
       issuer: "ALX",
-      date: "2024",
-      image: "/cert-python.jpg",
-      link: "#",
+      date: "2026",
+      image: "/backend-certificate.png",
+      link: "https://savanna.alxafrica.com/certificates/EHSL5NTF6C",
     },
-
+    {
+      id: 3,
+      title: "Professional Foundations",
+      issuer: "ALX",
+      date: "2025",
+      image: "/professional-foundations.png",
+      link: "https://savanna.alxafrica.com/certificates/6GNznXTcpE",
+    },
   ];
 
   return (
