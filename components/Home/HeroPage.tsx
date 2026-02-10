@@ -1,18 +1,52 @@
+"use client";
+
 import Link from "next/link";
 import { ArrowRight, Mail } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import HeroImage from "./HeroImage";
+import { motion, Variants } from "framer-motion";
+
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3,
+      delayChildren: 0.2,
+    },
+  },
+};
+
+const itemVariants: Variants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1, ease: "easeOut" },
+  },
+};
 
 const Hero = () => {
   return (
     <section className="relative w-full min-h-screen bg-white dark:bg-gray-900 flex flex-col md:flex-row overflow-hidden transition-colors duration-200">
-      <div className="w-full min-h-screen md:w-1/2 flex flex-col justify-center px-6 sm:px-12 lg:px-20 pt-24 pb-12 z-10">
-        
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight mb-6 text-center md:text-left">
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        className="w-full min-h-screen md:w-1/2 flex flex-col justify-center px-6 sm:px-12 lg:px-20 pt-24 pb-12 z-10"
+      >
+        <motion.h1
+          variants={itemVariants}
+          className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight mb-6 text-center md:text-left"
+        >
           Hi, I&apos;m <span className="text-blue-600">Faith Etornam</span>
-        </h1>
+        </motion.h1>
 
-        <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl mb-6 text-center md:text-left">
+        <motion.p
+          variants={itemVariants}
+          className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl mb-6 text-center md:text-left"
+        >
           I am a Full-Stack Engineer who bridges the gap between data-heavy
           backends and interactive frontends. Specializing in{" "}
           <span className="font-semibold text-blue-600 dark:text-blue-400">
@@ -24,10 +58,13 @@ const Hero = () => {
             React & Next.js
           </span>{" "}
           to build high-performance web applications.
-        </p>
+        </motion.p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col md:flex-row gap-4 mb-10">
+        <motion.div
+          variants={itemVariants}
+          className="flex flex-col md:flex-row gap-4 mb-10"
+        >
           <Link
             href="/projects"
             className="px-8 py-3.5 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-all flex items-center justify-center gap-2 shadow-lg shadow-blue-500/30"
@@ -41,9 +78,8 @@ const Hero = () => {
           >
             Contact Me
           </Link>
-        </div>
+        </motion.div>
 
-      
         <div className="flex items-center gap-6 text-gray-500 dark:text-gray-400 justify-center md:justify-start">
           <Link
             href="https://github.com/Faith-Etornam"
@@ -68,7 +104,7 @@ const Hero = () => {
             <Mail size={24} />
           </Link>
         </div>
-      </div>
+      </motion.div>
 
       <div className="w-full md:w-1/2 flex items-center justify-center p-10 md:p-0 relative bg-gray-50 dark:bg-gray-800/50 md:bg-transparent md:dark:bg-transparent">
         <div className="absolute w-72 h-72 md:w-96 md:h-96 bg-blue-200 dark:bg-blue-900 rounded-full blur-3xl opacity-30 animate-pulse"></div>

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Faith Etornam Contact",
+        alt: "Faith Etornam's Contact",
       },
     ],
   },

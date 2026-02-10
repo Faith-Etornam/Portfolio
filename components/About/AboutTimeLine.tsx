@@ -1,33 +1,33 @@
-import { Briefcase, GraduationCap } from 'lucide-react';
-import TimeLineItem from '../TimeLineItem';
+import { Briefcase, GraduationCap } from "lucide-react";
+import TimeLineItem from "../TimeLineItem";
 
 const AboutTimeLine = () => {
-    const timeLineItems = [
-      {
-        year: "Present",
-        title: "Freelance Full-Stack Developer",
-        subtitle: "Hiraki Digital / Remote",
-        description:
-          "Building bespoke web solutions for clients, focusing on scalable backend architectures and responsive frontend designs.",
-        icon: <Briefcase size={20} />,
-      },
-      {
-        year: "2025",
-        title: "ALX Software Engineering Graduate",
-        subtitle: "Backend Specialization",
-        description:
-          "Completed an intensive 12-month program focused on Holberton School curriculum. Mastered Low-level programming, Algorithms, System Engineering, and Backend Development.",
-        icon: <GraduationCap size={20} />,
-      },
-      {
-        year: "Current",
-        title: "BSc. Computer Science & Engineering",
-        subtitle: "University of Mines and Technology (UMaT)",
-        description:
-          "Deepening theoretical knowledge in Data Structures, Algorithms, and Computer Architecture while applying them to practical software projects.",
-        icon: <GraduationCap size={20} />,
-      },
-    ];
+  const timeLineItems = [
+    {
+      year: "Present",
+      title: "Freelance Full-Stack Developer",
+      subtitle: "Hiraki Digital / Remote",
+      description:
+        "Building bespoke web solutions for clients, focusing on scalable backend architectures and responsive frontend designs.",
+      icon: <Briefcase size={20} />,
+    },
+    {
+      year: "2025",
+      title: "ALX Software Engineering Graduate",
+      subtitle: "Backend Specialization",
+      description:
+        "Completed an intensive 4-month program. Mastered Python programming, Algorithms, System Engineering, and Backend Development.",
+      icon: <GraduationCap size={20} />,
+    },
+    {
+      year: "Current",
+      title: "BSc. Computer Science & Engineering",
+      subtitle: "University of Mines and Technology (UMaT)",
+      description:
+        "Deepening theoretical knowledge in Data Structures, Algorithms, and Computer Architecture while applying them to practical software projects.",
+      icon: <GraduationCap size={20} />,
+    },
+  ];
 
   return (
     <section className="py-20 px-6 lg:px-20">
@@ -51,6 +51,6 @@ const AboutTimeLine = () => {
       </div>
     </section>
   );
-}
+};
 
-export default AboutTimeLine
+export default AboutTimeLine;

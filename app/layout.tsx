@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     description:
       "Explore the portfolio of Faith Etornam. Specializing Backend Development using Python/Django, Frontend Development using React.js/Next.js development.",
     url: "/",
-    siteName: "Faith Etornam Portfolio",
+    siteName: "Faith Etornam's Portfolio",
     locale: "en_US",
     type: "website",
   },

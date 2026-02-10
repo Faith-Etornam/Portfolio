@@ -1,4 +1,3 @@
-import React from "react";
 import StatCard from "../StatCard";
 import Image from "next/image";
 import { Download, Terminal } from "lucide-react";
@@ -6,7 +5,7 @@ import Link from "next/link";
 
 const AboutMe = () => {
   const statCard = [
-    { number: "2+", label: "Years Coding" },
+    { number: "3+", label: "Years Coding" },
     { number: "5+", label: "Projects Built" },
     { number: "100%", label: "Commitment" },
     { number: "∞", label: "Learning" },
@@ -31,7 +30,11 @@ const AboutMe = () => {
               <strong className="text-gray-900 dark:text-white">
                 {" "}
                 University of Mines and Technology (UMaT)
-              </strong>
+              </strong>{" "}
+              and also the Vice President of{" "}
+              <strong className="text-gray-900 dark:text-white">
+                ACC ( Amalitech Coding Club UMaT ){" "}
+              </strong>{" "}
               , I realized that code wasn&apos;t just about syntax—it was about
               solving real-world problems.
             </p>
