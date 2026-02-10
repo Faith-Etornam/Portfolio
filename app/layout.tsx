@@ -104,6 +104,11 @@ export default function RootLayout({
                 "https://www.linkedin.com/in/faith-etornam",
                 "https://github.com/faith-etornam",
               ],
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Accra",
+                addressCountry: "Ghana",
+              },
               email: "mailto:faithgbadegbe1@gmail.com",
               jobTitle: "Backend Engineer",
               worksFor: {
