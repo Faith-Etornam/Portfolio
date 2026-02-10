@@ -5,8 +5,8 @@ export default function NotFound() {
   return (
     <>
       <Navbar />
-      <div className="h-screen w-full flex flex-col items-center justify-center bg-[#0f172a] text-white">
-        <h1 className="text-9xl font-extrabold text-white tracking-widest">
+      <div className="h-screen w-full flex flex-col items-center justify-center dark:bg-[#0f172a] text-white">
+        <h1 className="text-9xl font-extrabold text-black dark:text-white tracking-widest">
           404
         </h1>
 

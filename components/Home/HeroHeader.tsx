@@ -80,7 +80,7 @@ const HeroHeader = () => {
           </Link>
         </motion.div>
 
-        <div className="flex items-center gap-6 text-gray-500 dark:text-gray-400 justify-center md:justify-start">
+        <motion.div variants={itemVariants} className="flex items-center gap-6 text-gray-500 dark:text-gray-400 justify-center md:justify-start">
           <Link
             href="https://github.com/Faith-Etornam"
             target="_blank"
@@ -103,7 +103,7 @@ const HeroHeader = () => {
           >
             <Mail size={24} />
           </Link>
-        </div>
+        </motion.div>
       </motion.div>
     </>
   );

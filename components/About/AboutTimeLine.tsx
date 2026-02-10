@@ -1,4 +1,4 @@
-import { Briefcase, GraduationCap } from "lucide-react";
+import { Briefcase, GraduationCap, Users } from "lucide-react";
 import TimeLineItem from "../TimeLineItem";
 
 const AboutTimeLine = () => {
@@ -12,12 +12,12 @@ const AboutTimeLine = () => {
       icon: <Briefcase size={20} />,
     },
     {
-      year: "2025",
-      title: "ALX Software Engineering Graduate",
-      subtitle: "Backend Specialization",
+      year: "Current",
+      title: "Vice President",
+      subtitle: "Amalitech Coding Club (ACC) - UMaT",
       description:
-        "Completed an intensive 4-month program. Mastered Python programming, Algorithms, System Engineering, and Backend Development.",
-      icon: <GraduationCap size={20} />,
+        "Leading a community of student developers by organizing technical workshops, mentoring peers in Full-Stack development, and fostering a collaborative culture for software innovation on campus.",
+      icon: <Users size={20} />,
     },
     {
       year: "Current",
