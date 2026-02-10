@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const baseUrl = "https://portfolio-ashen-psi.vercel.app/";
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://localhost:3000";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -72,6 +72,7 @@ export const metadata: Metadata = {
     title: "Faith Etornam | Python & JavaScript Developer",
     description:
       "Backend Developer specializing in Django and React.js. View my projects and technical articles.",
+  
   },
 
   publisher: "Faith Etornam",
