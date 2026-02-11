@@ -1,5 +1,6 @@
 import { Briefcase, GraduationCap, Users } from "lucide-react";
 import TimeLineItem from "../TimeLineItem";
+import { Variants } from "framer-motion";
 
 const AboutTimeLine = () => {
   const timeLineItems = [
@@ -10,6 +11,14 @@ const AboutTimeLine = () => {
       description:
         "Building bespoke web solutions for clients, focusing on scalable backend architectures and responsive frontend designs.",
       icon: <Briefcase size={20} />,
+    },
+    {
+      year: "2025",
+      title: "ALX Software Engineering Graduate",
+      subtitle: "Backend Specialization",
+      description:
+        "Completed an intensive 4-month program. Mastered Python programming, Algorithms, System Engineering, and Backend Development.",
+      icon: <GraduationCap size={20} />,
     },
     {
       year: "Current",
@@ -28,6 +37,25 @@ const AboutTimeLine = () => {
       icon: <GraduationCap size={20} />,
     },
   ];
+
+  const containerVariants: Variants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
+  const itemVariants: Variants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { type: "spring", stiffness: 100, damping: 12 },
+    },
+  };
 
   return (
     <section className="py-20 px-6 lg:px-20">
