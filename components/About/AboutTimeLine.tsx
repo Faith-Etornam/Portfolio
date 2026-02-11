@@ -1,6 +1,8 @@
-import { Briefcase, GraduationCap, Users } from "lucide-react";
+"use client";
+
 import TimeLineItem from "../TimeLineItem";
-import { Variants } from "framer-motion";
+import { Briefcase, GraduationCap, Users } from "lucide-react";
+import { motion, Variants } from "framer-motion";
 
 const AboutTimeLine = () => {
   const timeLineItems = [
@@ -43,7 +45,7 @@ const AboutTimeLine = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.3,
+        staggerChildren: 0.5,
       },
     },
   };
@@ -60,21 +62,35 @@ const AboutTimeLine = () => {
   return (
     <section className="py-20 px-6 lg:px-20">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center">
+        <motion.h2
+          initial={{ opacity: 0, y: -30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5, duration: 0.8 }}
+          className="text-3xl font-bold text-gray-900 dark:text-white mb-12 text-center"
+        >
           Journey So Far
-        </h2>
+        </motion.h2>
 
         <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-linear-to-b before:from-transparent before:via-gray-300 before:to-transparent">
-          {timeLineItems.map((timeline) => (
-            <TimeLineItem
-              key={timeline.title}
-              year={timeline.year}
-              title={timeline.title}
-              subtitle={timeline.subtitle}
-              description={timeline.description}
-              icon={timeline.icon}
-            />
-          ))}
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+          >
+            {timeLineItems.map((timeline) => (
+              <TimeLineItem
+                key={timeline.title}
+                year={timeline.year}
+                title={timeline.title}
+                subtitle={timeline.subtitle}
+                description={timeline.description}
+                icon={timeline.icon}
+                variants={itemVariants}
+              />
+            ))}
+          </motion.div>
         </div>
       </div>
     </section>

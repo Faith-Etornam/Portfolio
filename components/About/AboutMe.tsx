@@ -56,7 +56,7 @@ const AboutMe = () => {
 
           <div className="pt-4">
             <Link
-              href="/resume.pdf"
+              href="/cv.pdf"
               target="_blank"
               className="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-lg font-semibold hover:opacity-90 transition-opacity"
             >
