@@ -38,14 +38,14 @@ const HeroHeader = () => {
       >
         <motion.h1
           variants={itemVariants}
-          className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6 text-center md:text-left"
+          className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-700 dark:text-white leading-tight mb-6 text-center md:text-left"
         >
           Hi, I&apos;m <span className="text-blue-600">Faith Etornam</span>
         </motion.h1>
 
         <motion.p
           variants={itemVariants}
-          className="text-lg text-gray-300 dark: leading-relaxed max-w-3xl mb-6 text-center md:text-left"
+          className="text-lg text-gray-500 leading-relaxed max-w-3xl mb-6 text-center md:text-left"
         >
           I am a Full-Stack Engineer who bridges the gap between data-heavy
           backends and interactive frontends. Specializing in{" "}

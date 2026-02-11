@@ -3,8 +3,8 @@ import HeroImage from "./HeroImage";
 
 const Hero = () => {
   return (
-    <section className="relative w-full min-h-screen bg-gray-900 flex flex-col md:flex-row overflow-hidden transition-colors duration-200 bg-[url('/hero-bg.jpg')] bg-cover bg-center bg-no-repeat">
-      <div className="absolute inset-0 bg-gray-900/60 z-0"></div>
+    <section className="relative w-full min-h-screen bg-white flex flex-col md:flex-row overflow-hidden transition-colors duration-200 bg-[url('/hero-light.jpg')]  dark:bg-[url('/hero-bg.jpg')] bg-cover bg-center bg-no-repeat">
+      <div className="absolute inset-0 dark:bg-gray-900/60 z-0"></div>
       <div className="relative z-10 flex flex-col md:flex-row w-full">
         <HeroHeader />
 
