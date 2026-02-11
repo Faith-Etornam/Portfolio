@@ -8,6 +8,7 @@ import Image from "next/image";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleTheme = () => {
     setDarkMode(!darkMode);
@@ -28,6 +29,18 @@ const Navbar = () => {
     }
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
@@ -37,13 +50,19 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-md dark:bg-gray-900 w-full fixed top-0 left-0 z-50 transition-colors duration-300">
+    <nav
+      className={`w-full fixed top-0 left-0 z-50 transition-all duration-300 ${
+        isScrolled
+          ? "bg-white/90 shadow-md dark:bg-gray-900/90 backdrop-blur-md"
+          : "bg-transparent dark:bg-transparent"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="shrink-0 flex items-center">
             <Link
               href="/"
-              className="text-2xl font-bold text-gray-800 dark:text-white tracking-wide flex items-center transition-colors"
+              className="text-2xl font-bold text-gray-600 dark:text-white tracking-wide flex items-center transition-colors"
             >
               <Image
                 src="/profile.jpg"
@@ -67,7 +86,7 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-300"
+                className="text-gray-500 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-300"
               >
                 {link.name}
               </Link>

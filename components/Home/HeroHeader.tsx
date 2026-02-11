@@ -38,14 +38,14 @@ const HeroHeader = () => {
       >
         <motion.h1
           variants={itemVariants}
-          className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white leading-tight mb-6 text-center md:text-left"
+          className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6 text-center md:text-left"
         >
           Hi, I&apos;m <span className="text-blue-600">Faith Etornam</span>
         </motion.h1>
 
         <motion.p
           variants={itemVariants}
-          className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-3xl mb-6 text-center md:text-left"
+          className="text-lg text-gray-300 dark: leading-relaxed max-w-3xl mb-6 text-center md:text-left"
         >
           I am a Full-Stack Engineer who bridges the gap between data-heavy
           backends and interactive frontends. Specializing in{" "}
@@ -80,7 +80,10 @@ const HeroHeader = () => {
           </Link>
         </motion.div>
 
-        <motion.div variants={itemVariants} className="flex items-center gap-6 text-gray-500 dark:text-gray-400 justify-center md:justify-start">
+        <motion.div
+          variants={itemVariants}
+          className="flex items-center gap-6 text-gray-500  justify-center md:justify-start"
+        >
           <Link
             href="https://github.com/Faith-Etornam"
             target="_blank"
