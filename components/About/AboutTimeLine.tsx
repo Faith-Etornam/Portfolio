@@ -23,7 +23,7 @@ const AboutTimeLine = () => {
       icon: <GraduationCap size={20} />,
     },
     {
-      year: "Current",
+      year: "Present",
       title: "Vice President",
       subtitle: "Amalitech Coding Club (ACC) - UMaT",
       description:
@@ -31,7 +31,7 @@ const AboutTimeLine = () => {
       icon: <Users size={20} />,
     },
     {
-      year: "Current",
+      year: "Present",
       title: "BSc. Computer Science & Engineering",
       subtitle: "University of Mines and Technology (UMaT)",
       description:

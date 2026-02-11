@@ -71,7 +71,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Column 2: Quick Links (Spans 3 columns) */}
+         
           <div className="md:col-span-3">
             <h4 className="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider mb-4">
               Explore

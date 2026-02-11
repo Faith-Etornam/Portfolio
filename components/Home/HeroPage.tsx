@@ -22,7 +22,7 @@ const Hero = () => {
         className="object-cover object-center hidden dark:block z-0"
       />
 
-      <div className="absolute inset-0 bg-white/30 dark:bg-gray-900/75 z-0"></div>
+      <div className="absolute inset-0 bg-white/30 dark:bg-gray-900/70 z-0"></div>
 
       {/* Foreground Content */}
       <div className="relative z-10 flex flex-col md:flex-row w-full">
