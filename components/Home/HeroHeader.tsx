@@ -45,7 +45,7 @@ const HeroHeader = () => {
 
         <motion.p
           variants={itemVariants}
-          className="text-lg text-gray-500 leading-relaxed max-w-3xl mb-6 text-center md:text-left"
+          className="text-lg text-gray-500 dark:text-white leading-relaxed max-w-3xl mb-6 text-center md:text-left"
         >
           I am a Full-Stack Engineer who bridges the gap between data-heavy
           backends and interactive frontends. Specializing in{" "}
