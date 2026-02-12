@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import ServicesHeader from "@/components/Service/ServiceHeader";
 import ServiceCard from "@/components/ServiceCard";
 import { Metadata } from "next";
 
@@ -28,6 +29,7 @@ const Services = () => {
   return (
     <>
       <Navbar />
+      <ServicesHeader />
       <ServiceCard />
       <Footer />
     </>

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s | Faith Etornam",
   },
   description:
-    "I build scalable APIs and secure databases using Python & Django. A Backend Engineer with additional frontend capabilities in React.js and Next.js.",
+    "Faith Etornam: Backend Engineer & Co-Founder of Hiraki Digital. Specializing in Python, Django, and Next.js to build scalable, secure web applications.",
   icons: {
     icon: "/favicon.jpg",
   },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     "ALX Certified Backend Developer",
   ],
 
-  authors: [{ name: "Faith Etornam" }],
+  authors: [{ name: "Faith Etornam Gbadegbe" }],
   creator: "Faith Etornam",
 
   robots: {
