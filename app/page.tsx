@@ -3,7 +3,7 @@ import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Home/HeroPage";
 import Navbar from "@/components/Navbar";
-import ServiceCard from "@/components/ServiceSection";
+import ServiceCard from "@/components/Home/HomeService";
 import TechStack from "@/components/TechStack";
 
 export default function Home() {

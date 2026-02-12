@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ServicesHeader from "@/components/Service/ServiceHeader";
-import ServiceCard from "@/components/ServiceSection";
+import ServiceCard from "@/components/Home/HomeService";
 
 export const metadata: Metadata = {
   title: "My Services",

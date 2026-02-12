@@ -2,6 +2,7 @@
 
 import { Code, Server, TrendingUp } from "lucide-react";
 import { motion, Variants } from "framer-motion";
+import ServiceCard from "../ServiceCard";
 
 const services = [
   {
@@ -37,7 +38,7 @@ const services = [
       "MySQL",
       "REST APIs",
       "JWT",
-      "Docker"
+      "Docker",
     ],
   },
   {
@@ -113,39 +114,14 @@ export default function ServicesSection() {
           className="grid grid-cols-1 md:grid-cols-3 gap-8"
         >
           {services.map((service, index) => (
-            <motion.article
+            <ServiceCard
               key={index}
+              title={service.title}
+              description={service.description}
+              techStack={service.techStack}
+              icon={service.icon}
               variants={cardVariants}
-              whileHover={{ y: -10 }}
-              className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700 flex flex-col h-full"
-            >
-              <div className="mb-6 p-4 bg-gray-50 dark:bg-gray-700/50 rounded-xl w-fit">
-                {service.icon}
-              </div>
-
-              <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">
-                {service.title}
-              </h3>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6 flex-grow">
-                {service.description}
-              </p>
-
-              <div className="pt-6 border-t border-gray-100 dark:border-gray-700">
-                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">
-                  Tools & Tech
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {service.techStack.map((tech, i) => (
-                    <span
-                      key={i}
-                      className="text-xs font-medium px-2.5 py-1 rounded-full bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-blue-300"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </motion.article>
+            />
           ))}
         </motion.div>
       </div>
