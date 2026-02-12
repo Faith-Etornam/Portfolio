@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     "ALX Certified Backend Developer",
   ],
 
-  authors: [{ name: "Faith Etornam Gbadegbe" }],
+  authors: [{ name: "Faith Etornam" }],
   creator: "Faith Etornam",
 
   robots: {
