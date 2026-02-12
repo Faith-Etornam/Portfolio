@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import ServiceCard from "@/components/ServiceCard";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -27,6 +28,7 @@ const Services = () => {
   return (
     <>
       <Navbar />
+      <ServiceCard />
       <Footer />
     </>
   );
