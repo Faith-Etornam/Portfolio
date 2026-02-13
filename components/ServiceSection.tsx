@@ -2,14 +2,14 @@
 
 import { Code, Server, TrendingUp } from "lucide-react";
 import { motion, Variants } from "framer-motion";
-import ServiceCard from "../ServiceCard";
+import ServiceCard from "./ServiceCard";
 
 const services = [
   {
     title: "Frontend Development",
     description:
       "I craft pixel-perfect, responsive interfaces. My designs are intuitive, ensuring users stay engaged and convert across all devices.",
-    icon: <Code className="w-8 h-8 text-blue-500" aria-hidden="true" />,
+    imageSrc: "/frontend.webp",
     techStack: [
       "HTML5",
       "CSS3",
@@ -30,7 +30,7 @@ const services = [
     title: "Custom Backend",
     description:
       "Secure, high-performance server-side architectures. I ensure your platform runs with zero downtime and scales effortlessly.",
-    icon: <Server className="w-8 h-8 text-green-500" aria-hidden="true" />,
+    imageSrc: "/backend.png",
     techStack: [
       "Python",
       "Django",
@@ -45,7 +45,7 @@ const services = [
     title: "SEO & Performance",
     description:
       "Visibility is key. I optimize site architecture and load speeds to maximize search engine ranking and improve user retention.",
-    icon: <TrendingUp className="w-8 h-8 text-purple-500" aria-hidden="true" />,
+    imageSrc: "/SEO.webp",
     techStack: ["Core Web Vitals", "SSR", "Semantic HTML"],
   },
 ];
@@ -67,7 +67,7 @@ const cardVariants: Variants = {
   },
 };
 
-export default function HomeService() {
+export default function ServiceSection() {
   return (
     <section
       className="py-20 bg-gray-50 dark:bg-gray-900"
@@ -119,7 +119,7 @@ export default function HomeService() {
               title={service.title}
               description={service.description}
               techStack={service.techStack}
-              icon={service.icon}
+              imageSrc={service.imageSrc}
               variants={cardVariants}
             />
           ))}

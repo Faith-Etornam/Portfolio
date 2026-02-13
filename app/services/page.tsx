@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ServicesHeader from "@/components/Service/ServiceHeader";
 import ServiceCard from "@/components/Home/HomeService";
+import ServiceSection from "@/components/ServiceSection";
 
 export const metadata: Metadata = {
   title: "My Services",
@@ -30,7 +31,7 @@ const Services = () => {
     <>
       <Navbar />
       <ServicesHeader />
-      <ServiceCard />
+      <ServiceSection />
       <Footer />
     </>
   );
