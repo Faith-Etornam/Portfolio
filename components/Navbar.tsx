@@ -129,8 +129,16 @@ const Navbar = () => {
             <Link
               key={link.name}
               href={link.href}
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 dark:text-gray-300 hover:text-blue-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
               onClick={() => setIsOpen(false)}
+              className="
+        flex justify-center 
+        w-full px-5 py-4
+        bg-white dark:bg-gray-800
+        border-t-0 border-gray-100 dark:border-gray-700/50
+        shadow-sm hover:shadow-md
+        transition-all duration-200 ease-in-out
+        active:scale-[0.98]
+      "
             >
               {link.name}
             </Link>
