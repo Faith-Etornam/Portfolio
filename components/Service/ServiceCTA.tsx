@@ -1,8 +1,8 @@
 "use client";
 
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight, Calendar, MessageSquare } from "lucide-react";
+import { ArrowRight, MessageSquare } from "lucide-react";
 
 const ServicesCTA = () => {
   return (
@@ -40,11 +40,10 @@ const ServicesCTA = () => {
 
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
             Whether you need a scalable backend, a full-stack overhaul, or an AI
-            integration—I&apos;m ready to ship. Let&apos;s discuss your technical
-            requirements.
+            integration—I&apos;m ready to ship. Let&apos;s discuss your
+            technical requirements.
           </p>
 
-    
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/contact"

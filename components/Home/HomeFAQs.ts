@@ -7,7 +7,7 @@ const faqs = [
   {
     question: "What is your preferred Tech Stack?",
     answer:
-      "I specialize in the Python/Django ecosystem for backend and React/Next.js for frontend. I also use Tailwind CSS for styling and PostgreSQL for database management.",
+      "I specialize in the Python/Django ecosystem for backend and React/Next.js for frontend. I also use Tailwind CSS for styling and MySQL for database management.",
   },
   {
     question: "Do you offer post-launch support?",

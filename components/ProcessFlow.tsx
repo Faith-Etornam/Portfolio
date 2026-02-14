@@ -65,17 +65,14 @@ const ProcessFlow = () => {
               transition={{ delay: index * 0.1 }}
               className="relative group bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-2xl p-6 hover:border-blue-500/30 transition-colors"
             >
-             
               <div className="absolute -top-4 left-6 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 text-xs font-mono font-bold py-1 px-3 rounded-full text-gray-400 group-hover:text-blue-500 transition-colors shadow-sm">
                 STEP {step.id}
               </div>
 
-             
               <div className="w-12 h-12 bg-white dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform duration-300">
                 {step.icon}
               </div>
 
-              
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
                 {step.title}
               </h3>
