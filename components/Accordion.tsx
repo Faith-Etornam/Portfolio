@@ -3,8 +3,7 @@
 import { motion } from "framer-motion";
 import { MessageCircleQuestion } from "lucide-react";
 import { useState } from "react";
-import FAQ from "../FAQ";
-
+import FAQ from "./FAQ";
 
 interface FAQItem {
   question: string;
@@ -14,10 +13,10 @@ interface FAQItem {
 interface Props {
   title: string;
   subHeading: string;
-  items: FAQItem[]
+  items: FAQItem[];
 }
 
-export default function ServiceAccordion({ title, subHeading, items }: Props) {
+export default function Accordion({ title, subHeading, items }: Props) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const handleToggle = (index: number) => {

@@ -4,8 +4,10 @@ import Navbar from "@/components/Navbar";
 import ServicesHeader from "@/components/Service/ServiceHeader";
 import ServiceTerminal from "@/components/Service/ServiceTerminal";
 import ServiceSection from "@/components/Service/ServiceSection";
-import ServiceAccordion from "@/components/Service/ServiceAccordion";
+import ServiceAccordion from "@/components/Accordion";
 import faqs from "@/components/Service/ServiceFAQ";
+import ServicesCTA from "@/components/Service/ServiceCTA";
+import ProcessFlow from "@/components/ProcessFlow";
 
 export const metadata: Metadata = {
   title: "My Services",
@@ -35,11 +37,13 @@ const Services = () => {
       <ServicesHeader />
       <ServiceTerminal />
       <ServiceSection />
+      <ProcessFlow />
       <ServiceAccordion
-        title="My Services"
+        title="Got Questions About My Services ?"
         subHeading="Common questions about my services and process"
         items={faqs}
       />
+        <ServicesCTA />
       <Footer />
     </>
   );

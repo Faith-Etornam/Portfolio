@@ -1,10 +1,11 @@
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Home/HeroPage";
-import HomeAccordion from "@/components/Home/HomeAccordion";
 import Navbar from "@/components/Navbar";
 import ServiceCard from "@/components/Home/HomeService";
 import TechStack from "@/components/TechStack";
+import Accordion from "@/components/Accordion";
+import faqs from "@/components/Home/HomeFAQs";
 
 export default function Home() {
   return (
@@ -13,7 +14,11 @@ export default function Home() {
       <Hero />
       <ServiceCard />
       <TechStack />
-      <HomeAccordion />
+      <Accordion
+        title="FAQs"
+        subHeading="Common questions about my services and process"
+        items={faqs}
+      />
       <CTASection />
       <Footer />
     </>
