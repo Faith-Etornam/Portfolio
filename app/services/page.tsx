@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ServicesHeader from "@/components/Service/ServiceHeader";
-import ServiceSection from "@/components/ServiceSection";
-import TechOrbit from "@/components/TechOrbit";
+import ServiceTerminal from "@/components/Service/ServiceTerminal";
+import ServiceSection from "@/components/Service/ServiceSection";
 
 export const metadata: Metadata = {
   title: "My Services",
@@ -31,7 +31,7 @@ const Services = () => {
     <>
       <Navbar />
       <ServicesHeader />
-      <TechOrbit />
+      <ServiceTerminal />
       <ServiceSection />
       <Footer />
     </>

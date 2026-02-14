@@ -1,8 +1,7 @@
 "use client";
 
-import { Code, Server, TrendingUp } from "lucide-react";
 import { motion, Variants } from "framer-motion";
-import ServiceCard from "./ServiceCard";
+import ServiceCard from "../ServiceCard";
 
 const services = [
   {
