@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { delay, motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, Calendar, MessageSquare } from "lucide-react";
 
@@ -14,10 +14,10 @@ const ServicesCTA = () => {
 
       <div className="max-w-4xl mx-auto relative z-10">
         <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
+          initial={{ opacity: 0, scale: 0.7 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
           className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-800 rounded-3xl p-8 md:p-16 text-center shadow-2xl"
         >
           {/* Availability Badge */}
@@ -38,14 +38,13 @@ const ServicesCTA = () => {
             </span>
           </h2>
 
-          {/* Subtext */}
           <p className="text-lg text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
             Whether you need a scalable backend, a full-stack overhaul, or an AI
             integration—I&apos;m ready to ship. Let&apos;s discuss your technical
             requirements.
           </p>
 
-          {/* Buttons */}
+    
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/contact"
@@ -64,7 +63,6 @@ const ServicesCTA = () => {
             </Link>
           </div>
 
-          {/* Trust Footer */}
           <p className="mt-8 text-sm text-gray-500 dark:text-gray-500">
             Typical response time:{" "}
             <span className="font-semibold text-gray-700 dark:text-gray-300">

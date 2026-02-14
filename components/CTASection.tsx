@@ -11,7 +11,7 @@ const CTASection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.5 }}
           className="text-center bg-blue-50 dark:bg-blue-900/20 rounded-2xl p-8 border border-blue-100 dark:border-blue-800 mx-6"
         >
           <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
