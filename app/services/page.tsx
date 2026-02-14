@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ServicesHeader from "@/components/Service/ServiceHeader";
 import ServiceSection from "@/components/ServiceSection";
+import TechOrbit from "@/components/TechOrbit";
 
 export const metadata: Metadata = {
   title: "My Services",
@@ -30,6 +31,7 @@ const Services = () => {
     <>
       <Navbar />
       <ServicesHeader />
+      <TechOrbit />
       <ServiceSection />
       <Footer />
     </>

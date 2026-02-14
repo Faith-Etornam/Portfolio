@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s | Faith Etornam",
   },
   description:
-    "Faith Etornam: Backend Engineer & Co-Founder of Hiraki Digital. Specializing in Python, Django, and Next.js to build scalable, secure web applications.",
+    "Faith Etornam — Backend Engineer & Co-Founder of Hiraki Digital. Specializing in Python, Django, and Next.js to build scalable, secure web applications.",
   icons: {
     icon: "/favicon.jpg",
   },

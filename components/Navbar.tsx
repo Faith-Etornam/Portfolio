@@ -133,6 +133,7 @@ const Navbar = () => {
               className="
         flex justify-center 
         w-full px-5 py-4
+        rounded-2xl
         bg-white dark:bg-gray-800
         border-t-0 border-gray-100 dark:border-gray-700/50
         shadow-sm hover:shadow-md
