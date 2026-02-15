@@ -7,7 +7,7 @@ import ServiceSection from "@/components/Service/ServiceSection";
 import ServiceAccordion from "@/components/Accordion";
 import faqs from "@/components/Service/ServiceFAQ";
 import ServicesCTA from "@/components/Service/ServiceCTA";
-import ProcessFlow from "@/components/ProcessFlow";
+import ProcessFlow from "@/components/About/ProcessFlow";
 
 export const metadata: Metadata = {
   title: "My Services",
