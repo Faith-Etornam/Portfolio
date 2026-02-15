@@ -24,12 +24,11 @@ const Hero = () => {
 
       <div className="absolute inset-0 bg-white/30 dark:bg-gray-900/70 z-0"></div>
 
-      {/* Foreground Content */}
       <div className="relative z-10 flex flex-col md:flex-row w-full">
         <HeroHeader />
 
         <div className="w-full md:w-1/2 flex items-center justify-center p-10 md:p-0 relative bg-transparent">
-          {/* Animated Glow */}
+      
           <div className="absolute w-72 h-72 md:w-96 md:h-96 bg-blue-500/40 dark:bg-blue-600 rounded-full blur-[100px] opacity-80 mix-blend-multiply dark:mix-blend-lighten animate-pulse z-0"></div>
 
           <div className="relative z-10">

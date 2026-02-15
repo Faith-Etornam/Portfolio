@@ -1,9 +1,10 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Github, ExternalLink, Code2 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { ExternalLink, Code2 } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 
 export interface Project {
   id: number;
@@ -71,7 +72,7 @@ const ProjectCard = ({ project, index }: ProjectCard) => {
             target="_blank"
             className="flex items-center gap-2 text-sm font-semibold text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
           >
-            <Github size={18} />
+            <FaGithub size={18} />
             Code
           </Link>
 
