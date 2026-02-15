@@ -5,6 +5,7 @@ import ProjectCard from "@/components/Projects/ProjectCard";
 import { Metadata } from "next";
 import projects from "@/components/Projects/projects";
 import ProjectHeader from "@/components/Projects/ProjectHeader";
+import ProjectContainer from "@/components/Projects/ProjectContainer";
 
 export const metadata: Metadata = {
   title: "My Projects",
@@ -32,14 +33,9 @@ export default function ProjectsPage() {
     <main className="min-h-screen bg-white dark:bg-gray-900 py-24 px-6 sm:px-12 lg:px-20">
       <Navbar />
       <ProjectHeader />
+      <ProjectContainer />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-        {projects.map((project, index) => (
-          <ProjectCard key={project.id} project={project} index={index} />
-        ))}
-      </div>
-
-      <div className="mt-24 flex justify-center">
+      <div className="mt-24 flex justify-center mb-6">
         <Link
           href="https://github.com/Faith-Etornam"
           target="_blank"
