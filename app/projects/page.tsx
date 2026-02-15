@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import ProjectCard from "@/components/Projects/ProjectCard";
 import { Metadata } from "next";
 import projects from "@/components/Projects/projects";
+import ProjectHeader from "@/components/Projects/ProjectHeader";
 
 export const metadata: Metadata = {
   title: "My Projects",
@@ -30,15 +31,7 @@ export default function ProjectsPage() {
   return (
     <main className="min-h-screen bg-white dark:bg-gray-900 py-24 px-6 sm:px-12 lg:px-20">
       <Navbar />
-      <div className="max-w-4xl mx-auto mb-16 text-center md:text-left">
-        <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 dark:text-white mb-6">
-          Featured <span className="text-blue-600">Projects</span>
-        </h1>
-        <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed max-w-2xl">
-          A collection of applications that demonstrate my ability to solve
-          complex problems with clean code and scalable architecture.
-        </p>
-      </div>
+      <ProjectHeader />
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {projects.map((project, index) => (
