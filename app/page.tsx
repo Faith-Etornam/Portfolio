@@ -1,4 +1,4 @@
-import CTASection from "@/components/CTASection";
+import CTASection from "@/components/Home/CTASection";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Home/HeroPage";
 import Navbar from "@/components/Navbar";
