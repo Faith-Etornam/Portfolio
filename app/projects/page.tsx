@@ -1,9 +1,7 @@
 import Link from "next/link";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import ProjectCard from "@/components/Projects/ProjectCard";
 import { Metadata } from "next";
-import projects from "@/components/Projects/projects";
 import ProjectHeader from "@/components/Projects/ProjectHeader";
 import ProjectContainer from "@/components/Projects/ProjectContainer";
 
