@@ -19,7 +19,7 @@ const Footer = () => {
       label: "LinkedIn",
     },
     { href: "mailto:faithgbadegbe1@gmail.com", icon: <Mail />, label: "Mail" },
-    { href: "https://wa.me/0541354000", icon: <FaWhatsapp size={24} />, label: "Whatsapp" },
+    { href: "https://wa.me/233541354000", icon: <FaWhatsapp size={24} />, label: "Whatsapp" },
   ];
 
   return (
