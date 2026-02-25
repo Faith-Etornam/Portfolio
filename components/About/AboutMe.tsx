@@ -1,4 +1,4 @@
-import StatCard from "../StatCard";
+import StatCard from "../ui/StatCard";
 import Image from "next/image";
 import { Download, Terminal } from "lucide-react";
 import Link from "next/link";

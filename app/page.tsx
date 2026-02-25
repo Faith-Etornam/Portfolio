@@ -4,7 +4,7 @@ import Hero from "@/components/Home/HeroPage";
 import Navbar from "@/components/Navbar";
 import ServiceCard from "@/components/Home/HomeService";
 import TechStack from "@/components/TechStack";
-import Accordion from "@/components/Accordion";
+import Accordion from "@/components/ui/Accordion";
 import faqs from "@/components/Home/HomeFAQs";
 
 export default function Home() {

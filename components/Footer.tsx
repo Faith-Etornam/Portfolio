@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Mail } from "lucide-react";
-import FooterLink from "./FooterLink";
-import SocialLink from "./SocialLink";
+import FooterLink from "./ui/FooterLink";
+import SocialLink from "./ui/SocialLink";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

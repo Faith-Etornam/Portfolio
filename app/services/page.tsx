@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import ServicesHeader from "@/components/Service/ServiceHeader";
 import ServiceTerminal from "@/components/Service/ServiceTerminal";
 import ServiceSection from "@/components/Service/ServiceSection";
-import ServiceAccordion from "@/components/Accordion";
+import ServiceAccordion from "@/components/ui/Accordion";
 import faqs from "@/components/Service/ServiceFAQ";
 import ServicesCTA from "@/components/Service/ServiceCTA";
 import ProcessFlow from "@/components/About/ProcessFlow";
