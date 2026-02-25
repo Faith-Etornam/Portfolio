@@ -6,7 +6,8 @@ import { z } from "zod";
 
 const ContactForm = () => {
   const contactSchema = z.object({
-    name: z.string().min(5, "Name must be at least 5 characters."),
+    first_name: z.string().min(5, "First Name must be at least 5 characters."),
+    last_name: z.string().min(5, "Last Name must be at least 5 characters"),
     email: z.email("Please enter a valid email address."),
     message: z.string().min(15, "Message must be at least 15 characters long."),
   });
@@ -14,7 +15,8 @@ const ContactForm = () => {
   type ContactFormData = z.infer<typeof contactSchema>;
 
   const [formData, setFormData] = useState<ContactFormData>({
-    name: "",
+    first_name: "",
+    last_name: "",
     email: "",
     message: "",
   });
@@ -61,7 +63,7 @@ const ContactForm = () => {
       alert(response.error);
     } else {
       setSubmitStatus("success");
-      setFormData({ name: "", email: "", message: "" });
+      setFormData({ first_name: "", last_name: "", email: "", message: "" });
       setTimeout(() => setSubmitStatus("idle"), 5000);
     }
 
@@ -82,24 +84,50 @@ const ContactForm = () => {
             htmlFor="name"
             className="block text-sm font-semibold text-gray-900 dark:text-white mb-2"
           >
-            Full Name
+            First Name
           </label>
           <input
             type="text"
-            id="name"
-            name="name"
-            value={formData.name}
+            id="first_name"
+            name="first_name"
+            value={formData.first_name}
             onChange={handleChange}
             className={`w-full px-4 py-3.5 bg-white dark:bg-gray-950 border ${
-              errors.name
+              errors.first_name
                 ? "border-red-500 focus:ring-red-500"
                 : "border-gray-200 dark:border-gray-800 focus:ring-blue-500 focus:border-blue-500"
             } rounded-xl focus:ring-2 outline-none transition-all text-gray-900 dark:text-white placeholder-gray-400 shadow-sm`}
-            placeholder="John Doe"
+            placeholder="Dwayne"
           />
-          {errors.name && (
+          {errors.first_name && (
             <p className="mt-1.5 text-sm text-red-500 font-medium">
-              {errors.name}
+              {errors.first_name}
+            </p>
+          )}
+        </div>
+        <div>
+          <label
+            htmlFor="name"
+            className="block text-sm font-semibold text-gray-900 dark:text-white mb-2"
+          >
+            Last Name
+          </label>
+          <input
+            type="text"
+            id="last_name"
+            name="last_name"
+            value={formData.last_name}
+            onChange={handleChange}
+            className={`w-full px-4 py-3.5 bg-white dark:bg-gray-950 border ${
+              errors.last_name
+                ? "border-red-500 focus:ring-red-500"
+                : "border-gray-200 dark:border-gray-800 focus:ring-blue-500 focus:border-blue-500"
+            } rounded-xl focus:ring-2 outline-none transition-all text-gray-900 dark:text-white placeholder-gray-400 shadow-sm`}
+            placeholder="Smith"
+          />
+          {errors.last_name && (
+            <p className="mt-1.5 text-sm text-red-500 font-medium">
+              {errors.last_name}
             </p>
           )}
         </div>
@@ -122,7 +150,7 @@ const ContactForm = () => {
                 ? "border-red-500 focus:ring-red-500"
                 : "border-gray-200 dark:border-gray-800 focus:ring-blue-500 focus:border-blue-500"
             } rounded-xl focus:ring-2 outline-none transition-all text-gray-900 dark:text-white placeholder-gray-400 shadow-sm`}
-            placeholder="john@example.com"
+            placeholder="dsmith@example.com"
           />
           {errors.email && (
             <p className="mt-1.5 text-sm text-red-500 font-medium">

@@ -11,21 +11,32 @@ import {
 } from "@react-email/components";
 
 interface ContactEmailProps {
-  name: string;
+  first_name: string;
+  last_name: string;
   email: string;
   message: string;
 }
 
-const ContactEmail = ({name, email, message}: ContactEmailProps) => {
+const ContactEmail = ({
+  first_name,
+  last_name,
+  email,
+  message,
+}: ContactEmailProps) => {
   return (
     <Html>
       <Head />
-      <Preview>New Portfolio Message from {name}</Preview>
+      <Preview>
+        New Portfolio Message from {first_name} {last_name}
+      </Preview>
       <Body style={main}>
         <Container style={container}>
           <Heading style={h1}>New Contact Request</Heading>
           <Text style={text}>
-            <strong>Name:</strong> {name}
+            <strong>First Name:</strong> {first_name}
+          </Text>
+          <Text style={text}>
+            <strong>Last Name:</strong> {last_name}
           </Text>
           <Text style={text}>
             <strong>Email:</strong> {email}
