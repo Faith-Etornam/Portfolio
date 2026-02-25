@@ -127,7 +127,7 @@ const ContactPage = () => {
                 {/* Social Links Grid */}
                 <div className="grid grid-cols-2 gap-4 pt-2">
                   <Link
-                    href="https://wa.me/233541354000"
+                    href="whatsapp://send?phone=233541354000"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-between p-1 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 hover:border-green-500 dark:hover:border-green-500 hover:shadow-xl hover:shadow-green-500/10 transition-all duration-300 group"
