@@ -8,7 +8,7 @@ import React from "react";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const contactSchema = z.object({
-  name: z.string().min(2),
+  name: z.string().min(5),
   email: z.email(),
   message: z.string().min(10),
 });

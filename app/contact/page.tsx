@@ -4,11 +4,12 @@ import { useState } from "react";
 import { z } from "zod";
 import { motion } from "framer-motion";
 import { Mail, MapPin, Send, CheckCircle2, ArrowUpRight } from "lucide-react";
-import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-import { Metadata } from "next";
+import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
+import { sendEmail } from "@/app/actions/sendEmail";
+// import { Metadata } from "next";
 
 // export const metadata: Metadata = {
 //   title: "Contact Me",
@@ -66,30 +67,37 @@ const Contact = () => {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setErrors({});
+   e.preventDefault();
+   setIsSubmitting(true);
+   setErrors({});
 
-    const validation = contactSchema.safeParse(formData);
+   const validation = contactSchema.safeParse(formData);
 
-    if (!validation.success) {
-      const formattedErrors: Partial<Record<keyof ContactFormData, string>> =
-        {};
-      validation.error.issues.forEach((issue) => {
-        formattedErrors[issue.path[0] as keyof ContactFormData] = issue.message;
-      });
-      setErrors(formattedErrors);
-      setIsSubmitting(false);
-      return;
-    }
+   if (!validation.success) {
+     const formattedErrors: Partial<Record<keyof ContactFormData, string>> = {};
+     validation.error.issues.forEach((issue) => {
+       formattedErrors[issue.path[0] as keyof ContactFormData] = issue.message;
+     });
+     setErrors(formattedErrors);
+     setIsSubmitting(false);
+     return;
+   }
 
-    // Simulate backend request
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitStatus("success");
-      setFormData({ name: "", email: "", message: "" });
-      setTimeout(() => setSubmitStatus("idle"), 3000);
-    }, 1500);
+   // 2. Call the Server Action
+   const response = await sendEmail(validation.data);
+
+   if (response.error) {
+     // Handle server-side error
+     setSubmitStatus("error");
+     alert(response.error); // Or display this in a nicer toast notification
+   } else {
+     // Handle success
+     setSubmitStatus("success");
+     setFormData({ name: "", email: "", message: "" });
+     setTimeout(() => setSubmitStatus("idle"), 5000);
+   }
+
+   setIsSubmitting(false);
   };
 
   return (
