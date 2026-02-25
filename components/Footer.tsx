@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { Mail } from "lucide-react";
 import FooterLink from "./FooterLink";
 import SocialLink from "./SocialLink";
@@ -58,7 +58,7 @@ const Footer = () => {
               .
             </p>
 
-            {/* Social Icons */}
+          
             <div className="flex items-center space-x-4 pt-2">
               {socialLinks.map((socialLink, index) => (
                 <SocialLink
@@ -84,7 +84,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Legal & Info */}
           <div className="md:col-span-4">
             <h4 className="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider mb-4">
               Legal
@@ -104,7 +103,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Copyright */}
+       
         <div className="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-500 dark:text-gray-400">
             &copy; {currentYear} Faith Etornam. All rights reserved.

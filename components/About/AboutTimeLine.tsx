@@ -15,6 +15,14 @@ const AboutTimeLine = () => {
       icon: <Briefcase size={20} />,
     },
     {
+      year: "2024",
+      title: "Frontend Developer Intern",
+      subtitle: "Ideation Axis / Remote",
+      description:
+        "Developed and maintained responsive frontend architecture using React.js, translating complex UI/UX wireframes into beautiful, functional designs for a Farmers/Consumers web application called Crop Circle",
+      icon: <Briefcase size={20} />,
+    },
+    {
       year: "2025",
       title: "ALX Software Engineering Graduate",
       subtitle: "Backend Specialization",

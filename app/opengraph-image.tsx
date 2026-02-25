@@ -81,7 +81,6 @@ export default async function Image() {
         </div>
       </div>
 
-      {/* IMAGE SIDE */}
       <img
         src={profilePicUrl}
         alt="Faith Etornam Profile"
