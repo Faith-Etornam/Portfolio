@@ -188,36 +188,7 @@ const Contact = () => {
                 {/* Social Links Grid */}
                 <div className="grid grid-cols-2 gap-4 pt-2">
                   <Link
-                    href="https://github.com/Faith-Etornam"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-3 p-4 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 hover:border-gray-400 dark:hover:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300 group shadow-sm"
-                  >
-                    <FaGithub
-                      size={22}
-                      className="text-gray-600 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white transition-colors"
-                    />
-                    <span className="font-semibold text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white transition-colors">
-                      GitHub
-                    </span>
-                  </Link>
-
-                  <Link
-                    href="https://linkedin.com/in/faith-etornam"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-3 p-4 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 hover:border-blue-500 dark:hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-300 group shadow-sm"
-                  >
-                    <FaLinkedin
-                      size={22}
-                      className="text-gray-600 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"
-                    />
-                    <span className="font-semibold text-gray-700 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                      LinkedIn
-                    </span>
-                  </Link>
-                  <Link
-                    href="https://wa.me/233541354000"
+                    href="https://wa.me/0541354000"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-between p-1 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 hover:border-green-500 dark:hover:border-green-500 hover:shadow-xl hover:shadow-green-500/10 transition-all duration-300 group"
@@ -235,6 +206,21 @@ const Contact = () => {
                     <div className="text-gray-300 dark:text-gray-700 group-hover:text-green-500 transition-all transform group-hover:translate-x-1 group-hover:-translate-y-1">
                       <ArrowUpRight size={20} />
                     </div>
+                  </Link>
+
+                  <Link
+                    href="https://linkedin.com/in/faith-etornam"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-3 p-4 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 hover:border-blue-500 dark:hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-300 group shadow-sm"
+                  >
+                    <FaLinkedin
+                      size={22}
+                      className="text-gray-600 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"
+                    />
+                    <span className="font-semibold text-gray-700 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                      LinkedIn
+                    </span>
                   </Link>
                 </div>
               </div>
