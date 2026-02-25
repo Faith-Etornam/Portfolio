@@ -2,7 +2,7 @@
 
 import { motion, Variants } from 'framer-motion';
 import { ArrowRight, Mail } from 'lucide-react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import Link from 'next/link';
 
 
@@ -99,6 +99,14 @@ const HeroHeader = () => {
             className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
           >
             <FaLinkedin size={24} />
+          </Link>
+          <Link
+            href="https://wa.me/0541354000"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-600 dark:hover:text-green-400 transition-colors"
+          >
+            <FaWhatsapp size={24} />
           </Link>
           <Link
             href="mailto:faithgbadegbe1@gmail.com"

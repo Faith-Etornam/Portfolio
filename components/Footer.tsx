@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { Mail } from "lucide-react";
 import FooterLink from "./ui/FooterLink";
 import SocialLink from "./ui/SocialLink";
@@ -19,6 +19,7 @@ const Footer = () => {
       label: "LinkedIn",
     },
     { href: "mailto:faithgbadegbe1@gmail.com", icon: <Mail />, label: "Mail" },
+    { href: "https://wa.me/0541354000", icon: <FaWhatsapp size={24} />, label: "Whatsapp" },
   ];
 
   return (
@@ -58,7 +59,6 @@ const Footer = () => {
               .
             </p>
 
-          
             <div className="flex items-center space-x-4 pt-2">
               {socialLinks.map((socialLink, index) => (
                 <SocialLink
@@ -71,7 +71,6 @@ const Footer = () => {
             </div>
           </div>
 
-         
           <div className="md:col-span-3">
             <h4 className="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider mb-4">
               Explore
@@ -103,7 +102,6 @@ const Footer = () => {
           </div>
         </div>
 
-       
         <div className="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-500 dark:text-gray-400">
             &copy; {currentYear} Faith Etornam. All rights reserved.
