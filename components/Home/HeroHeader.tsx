@@ -100,7 +100,7 @@ const HeroHeader = () => {
             <FaLinkedin size={24} />
           </Link>
           <Link
-            href="whatsapp://send?phone=233541354000&text=Hello%20Faith%2C%20I%27d%like%20to%20know%20more%20about%20your%20services"
+            href="whatsapp://send?phone=233541354000&text=Hello%20Faith%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-600 dark:hover:text-green-400 transition-colors"
