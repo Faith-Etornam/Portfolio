@@ -76,12 +76,12 @@ const ContactForm = () => {
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay: 0.2 }}
-      className="bg-gray-50 dark:bg-gray-900/50 p-8 md:p-12 rounded-3xl border border-gray-200 dark:border-gray-800"
+      className="bg-gray-50 dark:bg-gray-900/50 p-8 md:p-12 rounded-3xl border border-gray-200 dark:border-gray-800 text-left"
     >
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
           <label
-            htmlFor="name"
+            htmlFor="firstName"
             className="block text-sm font-semibold text-gray-900 dark:text-white mb-2"
           >
             First Name
@@ -107,7 +107,7 @@ const ContactForm = () => {
         </div>
         <div>
           <label
-            htmlFor="name"
+            htmlFor="lastName"
             className="block text-sm font-semibold text-gray-900 dark:text-white mb-2"
           >
             Last Name

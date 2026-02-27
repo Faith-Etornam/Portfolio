@@ -103,9 +103,7 @@ export default function RootLayout({
               image: `${baseUrl}/profile.jpg`,
               description:
                 "Backend Engineer specializing in scalable APIs with Python, Django, and Next.js.",
-
               email: "mailto:faithgbadegbe1@gmail.com",
-
               nationality: "Ghanaian",
 
               address: {

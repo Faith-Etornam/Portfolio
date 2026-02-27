@@ -62,28 +62,31 @@ const ContactPage = () => {
                 <h3 className="text-sm font-bold text-gray-900 dark:text-white uppercase tracking-wider mb-4 border-b border-gray-200 dark:border-gray-800 pb-2 inline-block">
                   What I can do for you
                 </h3>
-                {[
-                  "Interactive Next.js & React Frontends",
-                  "Scalable Python & Django Backends",
-                  "Technical SEO & Performance Audits",
-                  "Database Architecture & API Design",
-                ].map((service, i) => (
-                  <div
-                    key={i}
-                    className="flex items-center gap-3 text-gray-700 dark:text-gray-300"
-                  >
-                    <CheckCircle2
-                      size={20}
-                      className="text-blue-600 dark:text-blue-500 shrink-0"
-                    />
-                    <span className="font-medium">{service}</span>
+
+                <div className="flex flex-col items-center lg:items-start w-full">
+                  <div className="flex flex-col gap-3 items-start">
+                    {[
+                      "Interactive Next.js & React Frontends",
+                      "Scalable Python & Django Backends",
+                      "Technical SEO & Performance Audits",
+                      "Database Architecture & API Design",
+                    ].map((service, i) => (
+                      <div
+                        key={i}
+                        className="flex items-center justify-start gap-2 text-gray-700 dark:text-gray-300"
+                      >
+                        <CheckCircle2
+                          size={20}
+                          className="text-blue-600 dark:text-blue-500 shrink-0"
+                        />
+                        <span className="font-medium text-left">{service}</span>
+                      </div>
+                    ))}
                   </div>
-                ))}
+                </div>
               </div>
 
-              {/* Direct Contact Info */}
               <div className="flex flex-col gap-4 mt-8 w-full max-w-md mx-auto lg:mx-0">
-                {/* Email Action Card */}
                 <Link
                   href="mailto:faithgbadegbe1@gmail.com"
                   className="flex items-center justify-between p-4 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 hover:border-blue-500 dark:hover:border-blue-500 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 group"
@@ -96,7 +99,7 @@ const ContactPage = () => {
                       <span className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider mb-0.5">
                         Drop an email
                       </span>
-                      <span className="text-gray-900 dark:text-white font-semibold truncate max-w-[180px] sm:max-w-[250px]">
+                      <span className="text-gray-900 dark:text-white font-semibold truncate max-w-45 sm:max-w-62.5">
                         faithgbadegbe1@gmail.com
                       </span>
                     </div>
@@ -127,7 +130,7 @@ const ContactPage = () => {
                 {/* Social Links Grid */}
                 <div className="grid grid-cols-2 gap-4 pt-2">
                   <Link
-                    href="whatsapp://send?phone=233541354000"
+                    href="whatsapp://send?phone=233541354000&text=Hello%20Faith%2C%20I%27d%like%20to%20know%20more%20about%20your%20services"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-between p-1 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50 hover:border-green-500 dark:hover:border-green-500 hover:shadow-xl hover:shadow-green-500/10 transition-all duration-300 group"

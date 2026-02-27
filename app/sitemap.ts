@@ -36,14 +36,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: `${baseUrl}/terms-of-use`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
+      changeFrequency: "yearly",
       priority: 0.7,
     },
     {
       url: `${baseUrl}/privacy-policy`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
+      changeFrequency: "yearly",
       priority: 0.6,
     },
+    {
+      url: `${baseUrl}/disclaimer`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.5
+    }
   ];
 }

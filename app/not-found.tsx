@@ -10,7 +10,6 @@ export default function NotFound() {
           404
         </h1>
 
-       
         <div className="bg-blue-400 px-2 text-sm rounded rotate-12 ">
           Page Not Found
         </div>
