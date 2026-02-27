@@ -1,9 +1,10 @@
+"use client";
+
 import { motion } from "framer-motion";
-import ContactForm from "./ContactForm";
 import { ArrowUpRight, CheckCircle2, Mail, MapPin } from "lucide-react";
 import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import ContactForm from "./ContactForm";
 import Link from "next/link";
-
 
 const ContactSection = () => {
   return (
@@ -144,6 +145,6 @@ const ContactSection = () => {
       </div>
     </section>
   );
-}
+};
 
-export default ContactSection
+export default ContactSection;
