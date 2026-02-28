@@ -100,20 +100,6 @@ const Navbar = () => {
                   }`}
                 >
                   {link.name}
-
-                  {isActive && (
-                    <motion.div
-                      layoutId="navbar-active-indicator"
-                      className="absolute left-0 -bottom-1 w-full h-0.5 bg-blue-600 dark:bg-blue-400 rounded-full"
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{
-                        type: "spring",
-                        stiffness: 300,
-                        damping: 30,
-                      }}
-                    />
-                  )}
                 </Link>
               );
             })}

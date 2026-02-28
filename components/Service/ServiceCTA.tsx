@@ -17,7 +17,7 @@ const ServicesCTA = () => {
           initial={{ opacity: 0, scale: 0.7 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
           className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-800 rounded-3xl p-8 md:p-16 text-center shadow-2xl"
         >
           {/* Availability Badge */}

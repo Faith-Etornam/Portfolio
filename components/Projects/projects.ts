@@ -9,24 +9,24 @@ const projects: Project[] = [
     tags: ["React.js", "Chakra UI", "Rawg API", "Tanstack Query"],
     github: "https://github.com/Faith-Etornam/project1",
     image: "/game-discovery.png",
+    demo: "https://game-discovery-lovat.vercel.app/",
   },
   {
     id: 2,
-    title: "Task Management API",
+    title: "Multi-Hostel Management (HostelMate)",
     description:
-      "A scalable RESTful API designed to handle complex task scheduling and team collaboration features. Includes JWT authentication and real-time updates.",
-    tags: ["Python", "FastAPI", "Redis", "Docker"],
-    github: "https://github.com/Faith-Etornam/project2",
+      "My ALX capstone project: a comprehensive RESTful API multi-tenant management system. It empowers hostel managers to oversee properties and automate billing, while providing students a seamless platform to book rooms and pay rent securely via Paystack. Built with robust JWT authentication and complex tenant routing.",
+    tags: ["Python", "Django", "Django Rest Framework", "JWT"],
+    github: "https://github.com/Faith-Etornam/Hostel-Management-System.git",
   },
   {
     id: 3,
-    title: "Portfolio v1",
+    title: "Social Media API",
     description:
-      "My personal portfolio website showcasing my journey as a full-stack engineer. Features dark mode, animations, and a fully responsive design.",
-    tags: ["React", "Framer Motion", "Tailwind CSS"],
+      "A robust RESTful API developed during my ALX Backend Engineering program. It powers the core functionality of a social networking platform, featuring secure user authentication, CRUD operations for posts and comments, a follower/following system, and optimized database queries for timeline generation.",
+    tags: ["Python", "Django REST Framework", "MySQL", "JWT"],
     github: "https://github.com/Faith-Etornam/portfolio",
-    demo: "https://faith-etornam.com",
   },
 ];
 
-export default projects
+export default projects;

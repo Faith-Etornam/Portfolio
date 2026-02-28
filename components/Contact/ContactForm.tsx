@@ -1,3 +1,5 @@
+"use client"
+
 import { sendEmail } from "@/app/actions/sendEmail";
 import { motion } from "framer-motion";
 import { Send } from "lucide-react";
