@@ -1,7 +1,7 @@
-import StatCard from "../ui/StatCard";
-import Image from "next/image";
 import { Download, Terminal } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
+import StatCard from "../ui/StatCard";
 
 const AboutMe = () => {
   const statCard = [

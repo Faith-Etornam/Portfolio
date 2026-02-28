@@ -1,30 +1,10 @@
 import Image from "next/image";
-import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-import { Mail } from "lucide-react";
 import FooterLink from "./ui/FooterLink";
 import SocialLink from "./ui/SocialLink";
+import { socials } from "./socials";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  const socialLinks = [
-    {
-      href: "https://github.com/Faith-Etornam",
-      icon: <FaGithub />,
-      label: "Github",
-    },
-    {
-      href: "https://linkedin.com/Faith-Etornam",
-      icon: <FaLinkedin />,
-      label: "LinkedIn",
-    },
-    { href: "mailto:faithgbadegbe1@gmail.com", icon: <Mail />, label: "Mail" },
-    {
-      href: "whatsapp://send?phone=233541354000&text=Hello%20Faith%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services",
-      icon: <FaWhatsapp size={24} />,
-      label: "Whatsapp",
-    },
-  ];
 
   return (
     <footer className="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 pt-16 pb-8 transition-colors duration-300">
@@ -63,13 +43,14 @@ const Footer = () => {
               .
             </p>
 
-            <div className="flex items-center space-x-4 pt-2">
-              {socialLinks.map((socialLink, index) => (
+            <div className="flex text-gray-500 items-center space-x-4 pt-2">
+              {socials.map((social) => (
                 <SocialLink
-                  key={index}
-                  href={socialLink.href}
-                  icon={socialLink.icon}
-                  label={socialLink.label}
+                  key={social.label}
+                  label={social.label}
+                  href={social.href}
+                  className={social.classes}
+                  icon={<social.icon size={24} />}
                 />
               ))}
             </div>

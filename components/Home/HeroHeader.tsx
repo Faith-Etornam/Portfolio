@@ -1,8 +1,7 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import { ArrowRight, Mail } from "lucide-react";
-import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { socials } from "../socials";
 import SocialLink from "../ui/SocialLink";
@@ -61,7 +60,6 @@ const HeroHeader = () => {
           to build high-performance web applications.
         </motion.p>
 
-        {/* CTA Buttons */}
         <motion.div
           variants={itemVariants}
           className="flex flex-col md:flex-row gap-4 mb-10"

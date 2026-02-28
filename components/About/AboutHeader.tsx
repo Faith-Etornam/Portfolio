@@ -1,5 +1,3 @@
-
-
 const AboutHeader = () => {
   return (
     <section className="pt-32 pb-16 px-6 lg:px-20 text-center">
@@ -14,6 +12,6 @@ const AboutHeader = () => {
       </p>
     </section>
   );
-}
+};
 
-export default AboutHeader
+export default AboutHeader;

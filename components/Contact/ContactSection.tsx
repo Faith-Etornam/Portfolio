@@ -99,7 +99,7 @@ const ContactSection = () => {
                 </div>
               </div>
 
-              {/* Social Links Grid */}
+              
               <div className="grid grid-cols-2 gap-4 pt-2">
                 <Link
                   href="whatsapp://send?phone=233541354000&text=Hello%20Faith%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services"
