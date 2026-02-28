@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Disclaimer | Faith Etornam",
@@ -22,7 +23,6 @@ export default function DisclaimerPage() {
         <Navbar />
 
         <div className="relative z-10 w-full max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 flex-1 flex flex-col">
-      
           <div className="mb-12 border-b border-gray-200 dark:border-gray-800 pb-8">
             <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight mb-4 text-gray-900 dark:text-white">
               Disclaimer
@@ -32,7 +32,6 @@ export default function DisclaimerPage() {
             </p>
           </div>
 
-          
           <div className="space-y-8 text-gray-600 dark:text-gray-300 leading-relaxed">
             <section>
               <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
@@ -41,12 +40,12 @@ export default function DisclaimerPage() {
               <p>
                 The information provided by Faith Etornam (&quot;we,&quot;
                 &quot;us,&quot; or &quot;our&quot;) on{" "}
-                <a
-                  href="https://faith-etornam.com"
+                <Link
+                  href="https://faithetornam.com"
                   className="text-blue-600 dark:text-blue-400 hover:underline"
                 >
-                  faith-etornam.com
-                </a>{" "}
+                  faithetornam.com
+                </Link>{" "}
                 (the &quot;Site&quot;) is for general informational and
                 portfolio demonstration purposes only. All information on the
                 Site is provided in good faith, however, we make no
@@ -63,9 +62,9 @@ export default function DisclaimerPage() {
               </h2>
               <p className="mb-3">
                 The projects, source code, APIs, and applications showcased on
-                this Site (including those linked via GitHub) are provided &quot;as
-                is&quot; and &quot;as available&quot; without any warranties of any
-                kind.
+                this Site (including those linked via GitHub) are provided
+                &quot;as is&quot; and &quot;as available&quot; without any
+                warranties of any kind.
               </p>
               <p>
                 While these projects demonstrate software engineering
@@ -96,8 +95,8 @@ export default function DisclaimerPage() {
                 Any data entered into live demos may be periodically wiped,
                 publicly visible to other demo users, or stored insecurely.
                 Integrations with third-party services (such as payment gateways
-                like Paystack) operate in &quot;Test Mode&quot; within these demos and do
-                not process real financial transactions.
+                like Paystack) operate in &quot;Test Mode&quot; within these
+                demos and do not process real financial transactions.
               </p>
             </section>
 
@@ -136,8 +135,11 @@ export default function DisclaimerPage() {
                 Contact Us
               </h2>
               <p>
-                If you have any questions regarding this disclaimer, you can
-                contact us at:
+                If you have any questions regarding this disclaimer,
+                please contact via the{" "}
+                <Link className="text-blue-600" href="/contact">
+                  Contact Page
+                </Link>
               </p>
             </section>
           </div>
