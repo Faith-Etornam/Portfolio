@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display, } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://localhost:3000";
@@ -67,6 +67,14 @@ export const metadata: Metadata = {
     siteName: "Faith Etornam's Portfolio",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/portfolio-preview.png",
+        width: 1200,
+        height: 630,
+        type: "image/png",
+      },
+    ],
   },
 
   twitter: {
@@ -89,9 +97,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} ${playfair.variable} antialiased`}
-      >
+      <body className={`${inter.variable} ${playfair.variable} antialiased`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
