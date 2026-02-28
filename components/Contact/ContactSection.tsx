@@ -76,13 +76,13 @@ const ContactSection = () => {
                     </span>
                   </div>
                 </div>
-                {/* Subtle arrow that animates in on hover */}
+
                 <div className="text-gray-300 dark:text-gray-700 group-hover:text-blue-500 transition-all transform group-hover:translate-x-1 group-hover:-translate-y-1">
                   <ArrowUpRight size={20} />
                 </div>
               </Link>
 
-              {/* Location Static Card */}
+             
               <div className="flex items-center p-4 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900/50">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-gray-50 dark:bg-gray-800 text-gray-600 dark:text-gray-400">

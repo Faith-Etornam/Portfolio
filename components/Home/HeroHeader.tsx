@@ -1,9 +1,11 @@
-"use client"
+"use client";
 
-import { motion, Variants } from 'framer-motion';
-import { ArrowRight, Mail } from 'lucide-react';
-import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
-import Link from 'next/link';
+import { motion, Variants } from "framer-motion";
+import { ArrowRight, Mail } from "lucide-react";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import Link from "next/link";
+import { socials } from "../socials";
+import SocialLink from "../ui/SocialLink";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -70,7 +72,6 @@ const HeroHeader = () => {
           >
             View My Work <ArrowRight size={20} />
           </Link>
-
           <Link
             href="/contact"
             className="px-8 py-3.5 rounded-lg border-2 border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-200 font-semibold hover:border-blue-600 hover:text-blue-600 dark:hover:border-blue-500 dark:hover:text-blue-400 transition-all flex items-center justify-center"
@@ -83,40 +84,19 @@ const HeroHeader = () => {
           variants={itemVariants}
           className="flex items-center gap-6 text-gray-500  justify-center md:justify-start"
         >
-          <Link
-            href="https://github.com/Faith-Etornam"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-gray-900 dark:hover:text-white transition-colors"
-          >
-            <FaGithub size={24} />
-          </Link>
-          <Link
-            href="https://linkedin.com/in/faith-etornam"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
-          >
-            <FaLinkedin size={24} />
-          </Link>
-          <Link
-            href="whatsapp://send?phone=233541354000&text=Hello%20Faith%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-blue-600 dark:hover:text-green-400 transition-colors"
-          >
-            <FaWhatsapp size={24} />
-          </Link>
-          <Link
-            href="mailto:faithgbadegbe1@gmail.com"
-            className="hover:text-gray-900 dark:hover:text-white transition-colors"
-          >
-            <Mail size={24} />
-          </Link>
+          {socials.map((social) => (
+            <SocialLink
+              key={social.label}
+              label={social.label}
+              href={social.href}
+              className={social.classes}
+              icon={<social.icon size={24} />}
+            />
+          ))}
         </motion.div>
       </motion.div>
     </>
   );
-}
+};
 
-export default HeroHeader
+export default HeroHeader;

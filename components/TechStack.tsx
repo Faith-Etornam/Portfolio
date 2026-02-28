@@ -15,7 +15,7 @@ import {
   SiGit,
   SiPostman,
   SiGooglegemini,
-  SiDocker, 
+  SiDocker,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 
@@ -55,12 +55,11 @@ const skills = [
       { name: "Git", icon: <SiGit />, color: "text-red-500" },
       { name: "Postman", icon: <SiPostman />, color: "text-orange-500" },
       { name: "Gemini", icon: <SiGooglegemini />, color: "text-blue-500" },
-      { name: "Docker", icon: <SiDocker />, color: "text-blue-500"},
+      { name: "Docker", icon: <SiDocker />, color: "text-blue-500" },
     ],
   },
 ];
 
-// Framer Motion Variants for staggered animations
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
@@ -84,7 +83,6 @@ export default function TechStack() {
   return (
     <section className="py-24 bg-white dark:bg-gray-950 overflow-hidden">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
-        {/* Section Header */}
         <div className="text-center mb-16 max-w-2xl mx-auto">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
@@ -116,7 +114,6 @@ export default function TechStack() {
           </motion.p>
         </div>
 
-        {/* Skills Grid */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -130,19 +127,17 @@ export default function TechStack() {
               variants={cardVariants}
               className="group relative bg-gray-50 dark:bg-gray-900/50 rounded-3xl p-8 border border-gray-200 dark:border-gray-800 hover:border-blue-500/30 dark:hover:border-blue-400/30 transition-colors duration-300"
             >
-              {/* Subtle background glow effect on hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl pointer-events-none" />
+              <div className="absolute inset-0 bg-linear-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl pointer-events-none" />
 
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-8 border-b border-gray-200 dark:border-gray-800 pb-4">
                 {category.category}
               </h3>
 
-              {/* Flex Layout for Icons */}
               <div className="flex flex-wrap gap-x-6 gap-y-8">
                 {category.items.map((skill, skillIdx) => (
                   <div
                     key={skillIdx}
-                    className="flex flex-col items-center gap-3 w-[72px]"
+                    className="flex flex-col items-center gap-3 w-18"
                   >
                     <div
                       className={`text-4xl transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-2 ${skill.color} grayscale hover:grayscale-0 opacity-60 hover:opacity-100 drop-shadow-sm`}
