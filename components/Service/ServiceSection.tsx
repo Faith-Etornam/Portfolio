@@ -77,7 +77,7 @@ export default function ServiceSection() {
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-blue-600 dark:text-blue-400 font-semibold tracking-wide uppercase text-sm mb-3"
+          className="font-heading text-blue-600 dark:text-blue-400 font-semibold tracking-wide uppercase text-sm mb-3"
         >
           Services <span className="dark:text-white">Offered</span>
         </motion.p>

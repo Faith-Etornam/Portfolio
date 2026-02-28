@@ -38,9 +38,9 @@ const HeroHeader = () => {
       >
         <motion.h1
           variants={itemVariants}
-          className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-700 dark:text-white leading-tight mb-6 text-center md:text-left"
+          className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-700 dark:text-white leading-tight mb-6 text-center md:text-left"
         >
-          Hi, I&apos;m <span className="text-blue-600">Faith Etornam</span>
+          Hi, I&apos;m <span className="text-blue-600 font-heading">Faith Etornam</span>
         </motion.h1>
 
         <motion.p

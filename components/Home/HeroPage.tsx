@@ -5,7 +5,7 @@ import HeroImage from "./HeroImage";
 const Hero = () => {
   return (
     
-    <section className="relative w-full min-h-screen flex flex-col md:flex-row overflow-hidden transition-colors duration-200 bg-slate-50 dark:bg-gray-900">
+    <section className="font-body relative w-full min-h-screen flex flex-col md:flex-row overflow-hidden transition-colors duration-200 bg-slate-50 dark:bg-gray-900">
       <Image
         src="/hero-light.jpg"
         alt="Light background pattern"

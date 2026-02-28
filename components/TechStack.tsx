@@ -95,14 +95,14 @@ const cardVariants: Variants = {
 
 export default function TechStack() {
   return (
-    <section className="py-24 bg-white dark:bg-gray-950 overflow-hidden">
+    <section className="font-body py-24 bg-white dark:bg-gray-950 overflow-hidden">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16 max-w-2xl mx-auto">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 font-medium tracking-wide text-sm mb-6"
+            className="font-heading inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 font-medium tracking-wide text-sm mb-6"
           >
             <span className="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400 animate-pulse" />
             My Arsenal

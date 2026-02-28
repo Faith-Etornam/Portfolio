@@ -70,7 +70,7 @@ const cardVariants: Variants = {
 export default function HomeService() {
   return (
     <section
-      className="py-20 bg-gray-50 dark:bg-gray-900"
+      className="font-body py-20 bg-gray-50 dark:bg-gray-900"
       aria-label="Services offered"
     >
       <div className="text-center mb-10">
@@ -78,7 +78,7 @@ export default function HomeService() {
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-blue-600 dark:text-blue-400 font-semibold tracking-wide uppercase text-sm mb-3"
+          className="font-heading text-blue-600 dark:text-blue-400 font-semibold tracking-wide uppercase text-sm mb-3"
         >
           Services <span className="dark:text-white">Offered</span>
         </motion.p>
@@ -89,7 +89,7 @@ export default function HomeService() {
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4"
+            className="font-heading text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4"
           >
             How I Can Assist You
           </motion.h2>
