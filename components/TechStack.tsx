@@ -16,6 +16,11 @@ import {
   SiPostman,
   SiGooglegemini,
   SiDocker,
+  SiExpo,
+  SiCelery,
+  SiHtml5,
+  SiCss3,
+  SiJavascript
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 
@@ -23,6 +28,9 @@ const skills = [
   {
     category: "Frontend & Mobile",
     items: [
+      { name: "HTML5", icon: <SiHtml5 />, color: "text-orange-500" },
+      { name: "CSS3", icon: <SiCss3 />, color: "text-blue-500" },
+      { name: "JavaScript", icon: <SiJavascript />, color: "text-yellow-400" },
       { name: "React", icon: <SiReact />, color: "text-blue-400" },
       {
         name: "Next.js",
@@ -34,6 +42,11 @@ const skills = [
         icon: <TbBrandReactNative />,
         color: "text-blue-500",
       },
+      {
+        name: "Expo",
+        icon: <SiExpo />,
+        color: "text-white",
+      },
       { name: "Tailwind CSS", icon: <SiTailwindcss />, color: "text-cyan-400" },
       { name: "Framer Motion", icon: <SiFramer />, color: "text-pink-500" },
     ],
@@ -43,6 +56,7 @@ const skills = [
     items: [
       { name: "Python", icon: <SiPython />, color: "text-yellow-500" },
       { name: "Django", icon: <SiDjango />, color: "text-green-700" },
+      { name: "Celery", icon: <SiCelery />, color: "text-green-600" },
       { name: "MySQL", icon: <SiMysql />, color: "text-blue-600" },
       { name: "PostgreSQL", icon: <SiPostgresql />, color: "text-blue-400" },
       { name: "Supabase", icon: <SiSupabase />, color: "text-emerald-500" },
