@@ -67,14 +67,6 @@ export const metadata: Metadata = {
     siteName: "Faith Etornam's Portfolio",
     locale: "en_US",
     type: "website",
-    images: [
-      {
-        url: "/portfolio-review.png",
-        width: 1200,
-        height: 630,
-        type: "image/png",
-      },
-    ],
   },
 
   twitter: {
