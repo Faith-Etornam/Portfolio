@@ -25,9 +25,6 @@ export const metadata: Metadata = {
   },
   description:
     "Faith Etornam — Backend Engineer & Co-Founder of Hiraki Digital. Specializing in Python, Django, and Next.js to build scalable, secure web applications.",
-  icons: {
-    icon: "/favicon.jpg",
-  },
 
   keywords: [
     "Faith Etornam Gbadegbe",

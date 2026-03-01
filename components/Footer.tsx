@@ -17,8 +17,8 @@ const Footer = () => {
                   src="/profile.jpg"
                   alt="Faith Etornam"
                   className="h-full w-full object-cover"
-                  width={20}
-                  height={20}
+                  width={60}
+                  height={60}
                 />
               </div>
               <div>

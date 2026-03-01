@@ -68,11 +68,11 @@ const Navbar = () => {
               className="text-2xl font-bold text-gray-600 dark:text-white tracking-wide flex items-center transition-colors"
             >
               <Image
-                src="/profile.jpg"
+                src="/favicon.jpg"
                 alt="Faith Etornam Gbadegbe Profile Picture"
-                width={40}
-                height={40}
-                className="w-10 h-10 rounded-full object-cover shrink-0 border-2 border-transparent hover:border-blue-600 transition-colors duration-300 mr-3"
+                width={60}
+                height={60}
+                className="w-11 h-11 rounded-full object-cover shrink-0 border-2 border-transparent hover:border-blue-600 transition-colors duration-300 mr-3"
               />
               <span>
                 Faith Etor
