@@ -74,9 +74,6 @@ export const metadata: Metadata = {
   },
 
   publisher: "Faith Etornam",
-  verification: {
-    google: "yFs1MpQ7EeUDPGWUlt6Gf0isjv7M5GwfzjtJX3VN85o",
-  },
 };
 
 export default function RootLayout({
