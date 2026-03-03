@@ -94,7 +94,7 @@ export default function RootLayout({
               name: "Faith Etornam",
               gender: "Male",
               url: baseUrl,
-              image: `${baseUrl}/profile3.jpg`,
+              image: `${baseUrl}/profile3.jpeg`,
               description:
                 "Backend Engineer specializing in scalable APIs with Python, Django, and Next.js.",
               email: "mailto:faithgbadegbe1@gmail.com",
