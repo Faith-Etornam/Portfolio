@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Faith Etornam",
+  title: "Privacy Policy",
   description:
     "Privacy Policy detailing how data is collected and used on Faith Etornam's developer portfolio.",
 };
@@ -43,12 +43,12 @@ export default function PrivacyPolicyPage() {
                 protecting your personal data. This Privacy Policy will inform
                 you as to how we look after your personal data when you visit
                 our website{" "}
-                <a
+                <Link
                   href="https://faithetornam.com"
                   className="text-blue-600 dark:text-blue-400 hover:underline"
                 >
                   faithetornam.com
-                </a>{" "}
+                </Link>{" "}
                 (regardless of where you visit it from) and tell you about your
                 privacy rights and how the law protects you.
               </p>

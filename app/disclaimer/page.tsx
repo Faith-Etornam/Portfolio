@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Disclaimer | Faith Etornam",
+  title: "Disclaimer",
   description:
     "Legal disclaimers regarding the software projects and content on Faith Etornam's developer portfolio.",
 };
