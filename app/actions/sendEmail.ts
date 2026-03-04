@@ -4,6 +4,7 @@ import { Resend } from "resend";
 import { z } from "zod";
 import ContactEmail from "@/components/emails/ContactEmail";
 import React from "react";
+import ClientConfirmationEmail from "@/components/emails/ClientConfirmation";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -24,18 +25,28 @@ export async function sendEmail(formData: z.infer<typeof contactSchema>) {
   const { first_name, last_name, email, message } = validation.data;
 
   try {
-    const { data, error } = await resend.emails.send({
-      from: "Portfolio Contact Form <onboarding@resend.dev>",
-      to: ["faithgbadegbe1@gmail.com"],
-      subject: `New Message from ${first_name} ${last_name}`,
-      replyTo: email,
-      react: React.createElement(ContactEmail, {
-        first_name,
-        last_name,
-        email,
-        message,
-      }),
-    });
+   const { data, error } = await resend.batch.send([
+     {
+       from: "Portfolio <notifications@contact.faithetornam.com>",
+       to: "faithgbadegbe1@gmail.com",
+       subject: `New Message from ${first_name} ${last_name}`,
+       replyTo: email,
+       react: React.createElement(ContactEmail, {
+         first_name,
+         last_name,
+         email,
+         message,
+       }),
+     },
+     {
+       from: "Faith Etornam <hello@contact.faithetornam.com>",
+       to: email,
+       subject: "Message Received - Faith Etornam",
+       react: React.createElement(ClientConfirmationEmail, {
+        first_name
+       })
+     },
+   ]);
 
     if (error) {
       console.error(error);
