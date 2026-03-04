@@ -76,6 +76,78 @@ export const metadata: Metadata = {
   publisher: "Faith Etornam",
 };
 
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": `${baseUrl}/#person`,
+  name: "Faith Etornam",
+  gender: "Male",
+  url: baseUrl,
+  image: `${baseUrl}/profile3.jpeg`,
+  description:
+    "Backend Engineer specializing in scalable APIs with Python, Django, and Next.js.",
+  email: "mailto:faithgbadegbe1@gmail.com",
+  nationality: "Ghanaian",
+
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Accra",
+    addressCountry: "Ghana",
+  },
+
+  sameAs: [
+    "https://www.linkedin.com/in/faith-etornam",
+    "https://github.com/faith-etornam",
+  ],
+
+  worksFor: {
+    "@type": "Organization",
+    name: "Self-employed",
+  },
+
+  hasOccupation: [
+    {
+      "@type": "Occupation",
+      name: "Backend Engineer",
+    },
+    {
+      "@type": "Occupation",
+      name: "Student",
+    },
+  ],
+
+  affiliation: {
+    "@type": "CollegeOrUniversity",
+    name: "University of Mines and Technology",
+    sameAs: "https://umat.edu.gh/",
+  },
+
+  alumniOf: [
+    {
+      "@type": "EducationalOrganization",
+      name: "ALX Africa",
+      sameAs: "https://www.alxafrica.com/",
+    },
+  ],
+
+  knowsLanguage: ["English"],
+
+  knowsAbout: [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "React.js",
+    "Next.js",
+    "Frontend Development",
+    "Python",
+    "Django",
+    "API Design",
+    "MySQL",
+    "Backend Development",
+    "Docker",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -87,77 +159,7 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              "@id": `${baseUrl}/#person`,
-              name: "Faith Etornam",
-              gender: "Male",
-              url: baseUrl,
-              image: `${baseUrl}/profile3.jpeg`,
-              description:
-                "Backend Engineer specializing in scalable APIs with Python, Django, and Next.js.",
-              email: "mailto:faithgbadegbe1@gmail.com",
-              nationality: "Ghanaian",
-
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Accra",
-                addressCountry: "Ghana",
-              },
-
-              sameAs: [
-                "https://www.linkedin.com/in/faith-etornam",
-                "https://github.com/faith-etornam",
-              ],
-
-              worksFor: {
-                "@type": "Organization",
-                name: "Self-employed",
-              },
-
-              hasOccupation: [
-                {
-                  "@type": "Occupation",
-                  name: "Backend Engineer",
-                },
-                {
-                  "@type": "Occupation",
-                  name: "Student",
-                },
-              ],
-
-              affiliation: {
-                "@type": "CollegeOrUniversity",
-                name: "University of Mines and Technology",
-                sameAs: "https://umat.edu.gh/",
-              },
-
-              alumniOf: [
-                {
-                  "@type": "EducationalOrganization",
-                  name: "ALX Africa",
-                  sameAs: "https://www.alxafrica.com/",
-                },
-              ],
-
-              knowsLanguage: ["English"],
-
-              knowsAbout: [
-                "HTML5",
-                "CSS3",
-                "JavaScript",
-                "React.js",
-                "Next.js",
-                "Frontend Development",
-                "Python",
-                "Django",
-                "API Design",
-                "MySQL",
-                "Backend Development",
-                "Docker",
-              ],
-            }),
+            __html: JSON.stringify(personSchema),
           }}
         />
 
