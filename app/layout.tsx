@@ -81,6 +81,7 @@ const personSchema = {
   "@type": "Person",
   "@id": `${baseUrl}/#person`,
   name: "Faith Etornam",
+  alternateName: "Faith Etornam Gbadegbe",
   gender: "Male",
   url: baseUrl,
   image: `${baseUrl}/profile3.jpeg`,
