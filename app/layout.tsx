@@ -81,7 +81,12 @@ const personSchema = {
   "@type": "Person",
   "@id": `${baseUrl}/#person`,
   name: "Faith Etornam",
-  alternateName: "Faith Etornam Gbadegbe",
+  alternateName: [
+    "Faith Etornam Gbadegbe",
+    "Faith Gbadegbe",
+    "Gbadegbe Faith",
+    "Gbadegbe Faith Etornam",
+  ],
   gender: "Male",
   url: baseUrl,
   image: `${baseUrl}/profile3.jpeg`,
@@ -149,6 +154,84 @@ const personSchema = {
   ],
 };
 
+// BreadCrumb for SEO
+
+const breadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://faithetornam.com",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "About",
+      item: "https://faithetornam.com/about",
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: "Projects",
+      item: "https://faithetornam.com/projects",
+    },
+    {
+      "@type": "ListItem",
+      position: 4,
+      name: "Services",
+      item: "https://faithetornam.com/services",
+    },
+    {
+      "@type": "ListItem",
+      position: 5,
+      name: "Contact",
+      item: "https://faithetornam.com/contact",
+    },
+  ],
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Who is Faith Etornam?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Faith Etornam (Faith Etornam Gbadegbe) is a Backend Engineer and Full Stack Developer based in Accra, Ghana. He is an ALX Backend Development graduate and a Computer Science & Engineering student at UMaT, specializing in building scalable APIs with Python, Django, and modern web applications with Next.js.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What services does Faith Etornam offer through Hiraki Digital?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "As the Co-founder of Hiraki Digital, Faith Etornam offers backend systems architecture, secure API development using Django REST Framework, and high-performance frontend development with React and Next.js.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What technical stack does Faith Etornam use?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Faith's core stack includes Python, Django, and MySQL for backend engineering, and JavaScript, TypeScript, React, and Next.js for frontend development. He also has expertise in Docker and Cloud Engineering concepts.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How can I contact Faith Etornam for collaborations?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "You can reach out to Faith Etornam via his official website at faithetornam.com, through LinkedIn, or by email at faithgbadegbe1@gmail.com for backend and full-stack engineering opportunities.",
+      },
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -163,7 +246,18 @@ export default function RootLayout({
             __html: JSON.stringify(personSchema),
           }}
         />
-
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(breadcrumbData),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqSchema),
+          }}
+        />
         {children}
       </body>
     </html>

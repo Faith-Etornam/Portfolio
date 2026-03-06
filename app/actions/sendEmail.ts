@@ -1,9 +1,9 @@
 "use server";
 
+import React from "react";
 import { Resend } from "resend";
 import { z } from "zod";
 import ContactEmail from "@/components/emails/ContactEmail";
-import React from "react";
 import ClientConfirmationEmail from "@/components/emails/ClientConfirmation";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
