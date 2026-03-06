@@ -198,6 +198,7 @@ const breadcrumbData = {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  name: "Frequently Asked Questions about Faith Etornam",
   mainEntity: [
     {
       "@type": "Question",
