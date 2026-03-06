@@ -159,6 +159,8 @@ const personSchema = {
 const breadcrumbData = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
+  "@id": `${baseUrl}/#breadcrumb`,
+  name: "Faith Etornam Portfolio Navigation",
   itemListElement: [
     {
       "@type": "ListItem",
