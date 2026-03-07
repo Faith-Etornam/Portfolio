@@ -44,7 +44,7 @@ export default function TermsAndConditionsPage() {
               (&quot;you&quot;), and Faith Etornam (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), concerning your
               access to and use of the{" "}
               <a
-                href="https://faith-etornam.com"
+                href="https://faithetornam.com"
                 className="text-blue-600 dark:text-blue-400 hover:underline"
               >
                 faithetornam.com
