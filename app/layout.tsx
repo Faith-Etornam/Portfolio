@@ -24,11 +24,13 @@ export const metadata: Metadata = {
     template: "%s | Faith Etornam",
   },
   description:
-    "Faith Etornam — Backend Engineer and Co-founder of Hiraki Digital. Focused on architecting scalable server-side systems and secure APIs using Python and Django, with additional expertise in building modern web interfaces with Next.js.",
+    "Faith Gbadegbe — Backend Engineer and Co-founder of Hiraki Digital. Focused on architecting scalable server-side systems and secure APIs using Python and Django, with additional expertise in building modern web interfaces with Next.js.",
 
   keywords: [
     "Faith Etornam Gbadegbe",
     "Faith Etornam",
+    "Faith Gbadegbe",
+    "Gbadegbe Faith",
     "JavaScript Developer",
     "Python Developer",
     "Backend Developer",
@@ -41,8 +43,8 @@ export const metadata: Metadata = {
     "ALX Certified Backend Developer",
   ],
 
-  authors: [{ name: "Faith Etornam" }],
-  creator: "Faith Etornam",
+  authors: [{ name: "Faith Etornam Gbadegbe" }],
+  creator: "Faith Etornam Gbadegbe",
 
   robots: {
     index: true,
