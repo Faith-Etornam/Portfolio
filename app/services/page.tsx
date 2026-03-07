@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "/services",
     images: [
       {
-        url: "/opengraph-image",
+        url: "/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "Faith Etornam's Services",
