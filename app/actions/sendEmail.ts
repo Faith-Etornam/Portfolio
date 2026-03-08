@@ -52,7 +52,6 @@ export async function sendEmail(formData: z.infer<typeof contactSchema>) {
       console.error(error);
       return { error: error.message };
     }
-
     return { success: true, data };
   } catch (error) {
     console.error(error);

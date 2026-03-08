@@ -156,46 +156,6 @@ const personSchema = {
   ],
 };
 
-// BreadCrumb for SEO
-
-const breadcrumbData = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "@id": `${baseUrl}/#breadcrumb`,
-  name: "Faith Etornam Portfolio Navigation",
-  itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      name: "Home",
-      item: "https://faithetornam.com",
-    },
-    {
-      "@type": "ListItem",
-      position: 2,
-      name: "About",
-      item: "https://faithetornam.com/about",
-    },
-    {
-      "@type": "ListItem",
-      position: 3,
-      name: "Projects",
-      item: "https://faithetornam.com/projects",
-    },
-    {
-      "@type": "ListItem",
-      position: 4,
-      name: "Services",
-      item: "https://faithetornam.com/services",
-    },
-    {
-      "@type": "ListItem",
-      position: 5,
-      name: "Contact",
-      item: "https://faithetornam.com/contact",
-    },
-  ],
-};
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -249,12 +209,6 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(personSchema),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(breadcrumbData),
           }}
         />
         <script
