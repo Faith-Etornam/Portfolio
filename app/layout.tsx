@@ -25,7 +25,9 @@ export const metadata: Metadata = {
   },
   description:
     "Faith Gbadegbe — Backend Engineer and Co-founder of Hiraki Digital. Focused on architecting scalable server-side systems and secure APIs using Python and Django, with additional expertise in building modern web interfaces with Next.js.",
-
+  alternates: {
+    canonical: "https://www.faithetornam.com/",
+  },
   keywords: [
     "Faith Etornam Gbadegbe",
     "Faith Etornam",
@@ -155,7 +157,6 @@ const personSchema = {
     "Docker",
   ],
 };
-
 
 const faqSchema = {
   "@context": "https://schema.org",
