@@ -108,6 +108,7 @@ const personSchema = {
   sameAs: [
     "https://www.linkedin.com/in/faith-etornam",
     "https://github.com/faith-etornam",
+    "https://www.instagram.com/faithetornam1",
   ],
 
   worksFor: {
