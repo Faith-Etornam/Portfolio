@@ -10,7 +10,9 @@ export const metadata: Metadata = {
   title: "My Projects",
   description:
     "Explore the technical portfolio of Faith Etornam. Featuring scalable backend APIs, secure database architectures, and full-stack applications built with Python, Django, and React.js.",
-
+  alternates: {
+    canonical: "https://www.faithetornam.com/projects",
+  },
   openGraph: {
     title: "My Projects | Faith Etornam",
     description:

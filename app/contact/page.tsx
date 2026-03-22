@@ -7,7 +7,9 @@ export const metadata: Metadata = {
   title: "Contact Me",
   description:
     "Get in touch with Faith Etornam to discuss scalable backend APIs, secure database architectures, and full-stack applications built with Python, Django, and React.js.",
-
+  alternates: {
+    canonical: "https://www.faithetornam.com/contact",
+  },
   openGraph: {
     title: "Contact | Faith Etornam",
     description:

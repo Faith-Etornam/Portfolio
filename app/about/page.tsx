@@ -11,7 +11,9 @@ export const metadata: Metadata = {
   title: "About Me",
   description:
     "Learn more about Faith Etornam, a Backend Engineer and Computer Science student passionate about building scalable APIs, modern web applications, and digital solutions.",
-
+  alternates: {
+    canonical: "https://www.faithetornam.com/about",
+  },
   openGraph: {
     title: "About Faith Etornam | Backend & Frontend Engineer",
     description:
