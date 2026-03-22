@@ -13,7 +13,9 @@ export const metadata: Metadata = {
   title: "My Services",
   description:
     "Professional backend development services including scalable API design, secure database architecture, and custom web solutions using Python, Django, and React.js. & Next.js",
-
+  alternates: {
+    canonical: "https://www.faithetornam.com/services",
+  },
   openGraph: {
     title: "Technical Services | Faith Etornam",
     description:
